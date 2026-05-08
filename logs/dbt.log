@@ -1,0 +1,1230 @@
+[0m08:39:10.159715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A6854D8E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A6B2E4890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A6B2E65D0>]}
+
+
+============================== 08:39:10.163229 | 9c355b53-2244-4a80-9661-7ffcada74cff ==============================
+[0m08:39:10.163229 [info ] [MainThread]: Running with dbt=1.11.9
+[0m08:39:10.163229 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m08:39:10.176420 [info ] [MainThread]: dbt version: 1.11.9
+[0m08:39:10.176420 [info ] [MainThread]: python version: 3.12.13
+[0m08:39:10.176420 [info ] [MainThread]: python path: C:\Repos\jaffle-shop\.venv\Scripts\python.exe
+[0m08:39:10.177418 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m08:39:10.644608 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m08:39:10.645618 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m08:39:10.645618 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m08:39:10.738245 [info ] [MainThread]: Using profiles dir at C:\Users\ChristianPaskevicius\.dbt
+[0m08:39:10.738245 [info ] [MainThread]: Using profiles.yml file at C:\Users\ChristianPaskevicius\.dbt\profiles.yml
+[0m08:39:10.739251 [info ] [MainThread]: Using dbt_project.yml file at C:\Repos\jaffle-shop\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\dbt_project.yml
+[0m08:39:10.740247 [info ] [MainThread]: adapter type: snowflake
+[0m08:39:10.741247 [info ] [MainThread]: adapter version: 1.11.4
+[0m08:39:10.812363 [info ] [MainThread]: Configuration:
+[0m08:39:10.812942 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m08:39:10.812942 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m08:39:10.812942 [info ] [MainThread]: Required dependencies:
+[0m08:39:10.813963 [debug] [MainThread]: Executing "git --help"
+[0m08:39:10.982103 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:39:10.983095 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:10.983600 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:39:10.983835 [info ] [MainThread]: Connection:
+[0m08:39:10.983835 [info ] [MainThread]:   account: ewuupkz-thb76066
+[0m08:39:10.984853 [info ] [MainThread]:   user: pskavs
+[0m08:39:10.984853 [info ] [MainThread]:   database: ANALYTICS
+[0m08:39:10.984853 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m08:39:10.985842 [info ] [MainThread]:   role: None
+[0m08:39:10.985842 [info ] [MainThread]:   schema: dbt_christian
+[0m08:39:10.985842 [info ] [MainThread]:   authenticator: snowflake_jwt
+[0m08:39:10.985842 [info ] [MainThread]:   oauth_client_id: None
+[0m08:39:10.986846 [info ] [MainThread]:   query_tag: None
+[0m08:39:10.986846 [info ] [MainThread]:   client_session_keep_alive: False
+[0m08:39:10.986846 [info ] [MainThread]:   host: None
+[0m08:39:10.987841 [info ] [MainThread]:   port: None
+[0m08:39:10.987841 [info ] [MainThread]:   proxy_host: None
+[0m08:39:10.987841 [info ] [MainThread]:   proxy_port: None
+[0m08:39:10.987841 [info ] [MainThread]:   protocol: None
+[0m08:39:10.988844 [info ] [MainThread]:   connect_retries: 1
+[0m08:39:10.988844 [info ] [MainThread]:   connect_timeout: None
+[0m08:39:10.988844 [info ] [MainThread]:   retry_on_database_errors: False
+[0m08:39:10.989843 [info ] [MainThread]:   retry_all: False
+[0m08:39:10.989843 [info ] [MainThread]:   insecure_mode: False
+[0m08:39:10.990841 [info ] [MainThread]:   reuse_connections: True
+[0m08:39:10.990841 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m08:39:10.991841 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m08:39:10.991841 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m08:39:11.357146 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m08:39:15.797834 [debug] [MainThread]: Using snowflake connection "debug"
+[0m08:39:15.797834 [debug] [MainThread]: On debug: select 1 as id
+[0m08:39:15.797834 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:39:16.843520 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.045 seconds
+[0m08:39:16.845553 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m08:39:16.846553 [info ] [MainThread]: [32mAll checks passed![0m
+[0m08:39:16.848552 [debug] [MainThread]: Command `dbt debug` succeeded at 08:39:16.848552 after 6.84 seconds
+[0m08:39:16.849552 [debug] [MainThread]: Connection 'debug' was left open.
+[0m08:39:16.850552 [debug] [MainThread]: On debug: Close
+[0m08:39:17.016783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A6B85D340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A6864EB40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019A6E2B2D20>]}
+[0m08:39:17.017796 [debug] [MainThread]: Flushing usage events
+[0m08:39:17.311212 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:39:53.788585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D420495B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D423B0AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D423B0AA0>]}
+
+
+============================== 08:39:53.791583 | 3fa8853d-34ff-4e33-9cdf-5baed898dce4 ==============================
+[0m08:39:53.791583 [info ] [MainThread]: Running with dbt=1.11.9
+[0m08:39:53.793093 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt deps', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m08:39:53.890908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3fa8853d-34ff-4e33-9cdf-5baed898dce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D3F68AD50>]}
+[0m08:39:54.091399 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-kmbygflp'
+[0m08:39:54.092906 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m08:39:54.209825 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m08:39:54.210831 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m08:39:54.252801 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m08:39:54.256875 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m08:39:54.321555 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m08:39:54.325010 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/dbt-labs/dbt-codegen.git a8814c80966ee8ce56b8cd5cc283fd48"
+[0m08:39:55.728938 [debug] [MainThread]: STDOUT: "b''"
+[0m08:39:55.729931 [debug] [MainThread]: STDERR: "b"Cloning into 'a8814c80966ee8ce56b8cd5cc283fd48'...\n""
+[0m08:39:55.729931 [debug] [MainThread]: Pulling new dependency a8814c80966ee8ce56b8cd5cc283fd48.
+[0m08:39:55.729931 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m08:39:55.755763 [debug] [MainThread]: STDOUT: "b'526cb1f0e8464d88b931e0249b4198039f15d641\n'"
+[0m08:39:55.755763 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:55.756763 [debug] [MainThread]: Checking out revision main.
+[0m08:39:55.756763 [debug] [MainThread]: Executing "git remote set-branches origin main"
+[0m08:39:55.799135 [debug] [MainThread]: STDOUT: "b''"
+[0m08:39:55.799135 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:55.799135 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags main"
+[0m08:39:57.095435 [debug] [MainThread]: STDOUT: "b''"
+[0m08:39:57.096428 [debug] [MainThread]: STDERR: "b'From https://github.com/dbt-labs/dbt-codegen\n * branch            main       -> FETCH_HEAD\n * [new tag]         0.0.1      -> 0.0.1\n * [new tag]         0.0.2      -> 0.0.2\n * [new tag]         0.1.0      -> 0.1.0\n * [new tag]         0.10.0     -> 0.10.0\n * [new tag]         0.11.0     -> 0.11.0\n * [new tag]         0.12.0     -> 0.12.0\n * [new tag]         0.12.1     -> 0.12.1\n * [new tag]         0.13.0     -> 0.13.0\n * [new tag]         0.13.1     -> 0.13.1\n * [new tag]         0.14.0     -> 0.14.0\n * [new tag]         0.2.0      -> 0.2.0\n * [new tag]         0.3.0      -> 0.3.0\n * [new tag]         0.3.1      -> 0.3.1\n * [new tag]         0.3.2      -> 0.3.2\n * [new tag]         0.4.0      -> 0.4.0\n * [new tag]         0.4.1      -> 0.4.1\n * [new tag]         0.5.0      -> 0.5.0\n * [new tag]         0.6.0      -> 0.6.0\n * [new tag]         0.7.0      -> 0.7.0\n * [new tag]         0.8.0      -> 0.8.0\n * [new tag]         0.8.1      -> 0.8.1\n * [new tag]         0.9.0      -> 0.9.0\n * [new tag]         v0.0.3     -> v0.0.3\n * [new tag]         v0.0.4     -> v0.0.4\n * [new tag]         v0.13.0-b1 -> v0.13.0-b1\n'"
+[0m08:39:57.096428 [debug] [MainThread]: Executing "git tag --list"
+[0m08:39:57.126089 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.0.2\n0.1.0\n0.10.0\n0.11.0\n0.12.0\n0.12.1\n0.13.0\n0.13.1\n0.14.0\n0.14.1\n0.2.0\n0.3.0\n0.3.1\n0.3.2\n0.4.0\n0.4.1\n0.5.0\n0.6.0\n0.7.0\n0.8.0\n0.8.1\n0.9.0\nv0.0.3\nv0.0.4\nv0.13.0-b1\n'"
+[0m08:39:57.126089 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:57.126089 [debug] [MainThread]: Executing "git reset --hard origin/main"
+[0m08:39:58.300506 [debug] [MainThread]: STDOUT: "b'HEAD is now at 526cb1f Fix get_models silently returning no results on Windows (#269)\n'"
+[0m08:39:58.300506 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:58.300506 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m08:39:58.326188 [debug] [MainThread]: STDOUT: "b'526cb1f0e8464d88b931e0249b4198039f15d641\n'"
+[0m08:39:58.327176 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:58.327176 [debug] [MainThread]: Checked out at 526cb1f.
+[0m08:39:58.327176 [warn ] [MainThread]: [33mWARNING: The git package "https://github.com/dbt-labs/dbt-codegen.git" 
+	is pinned to the "main" branch.
+	This can introduce breaking changes into your project without warning!
+
+See https://docs.getdbt.com/docs/package-management#section-specifying-package-versions[0m
+[0m08:39:58.328176 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m08:39:58.353133 [debug] [MainThread]: STDOUT: "b'526cb1f0e8464d88b931e0249b4198039f15d641\n'"
+[0m08:39:58.353133 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:58.358320 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/dbt-labs/dbt-codegen.git a8814c80966ee8ce56b8cd5cc283fd48"
+[0m08:39:58.386623 [debug] [MainThread]: STDOUT: "b''"
+[0m08:39:58.387624 [debug] [MainThread]: STDERR: "b"fatal: destination path 'a8814c80966ee8ce56b8cd5cc283fd48' already exists and is not an empty directory.\n""
+[0m08:39:58.387624 [debug] [MainThread]: command return code=128
+[0m08:39:58.387624 [debug] [MainThread]: Updating existing dependency a8814c80966ee8ce56b8cd5cc283fd48.
+[0m08:39:58.387624 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m08:39:58.412224 [debug] [MainThread]: STDOUT: "b'526cb1f0e8464d88b931e0249b4198039f15d641\n'"
+[0m08:39:58.413225 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:58.413225 [debug] [MainThread]: Checking out revision main.
+[0m08:39:58.413225 [debug] [MainThread]: Executing "git remote set-branches origin main"
+[0m08:39:58.443283 [debug] [MainThread]: STDOUT: "b''"
+[0m08:39:58.444783 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:58.444783 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags main"
+[0m08:39:59.155288 [debug] [MainThread]: STDOUT: "b''"
+[0m08:39:59.156288 [debug] [MainThread]: STDERR: "b'From https://github.com/dbt-labs/dbt-codegen\n * branch            main       -> FETCH_HEAD\n'"
+[0m08:39:59.156288 [debug] [MainThread]: Executing "git tag --list"
+[0m08:39:59.181859 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.0.2\n0.1.0\n0.10.0\n0.11.0\n0.12.0\n0.12.1\n0.13.0\n0.13.1\n0.14.0\n0.14.1\n0.2.0\n0.3.0\n0.3.1\n0.3.2\n0.4.0\n0.4.1\n0.5.0\n0.6.0\n0.7.0\n0.8.0\n0.8.1\n0.9.0\nv0.0.3\nv0.0.4\nv0.13.0-b1\n'"
+[0m08:39:59.181859 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:59.181859 [debug] [MainThread]: Executing "git reset --hard origin/main"
+[0m08:39:59.233209 [debug] [MainThread]: STDOUT: "b'HEAD is now at 526cb1f Fix get_models silently returning no results on Windows (#269)\n'"
+[0m08:39:59.233209 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:59.233209 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m08:39:59.257083 [debug] [MainThread]: STDOUT: "b'526cb1f0e8464d88b931e0249b4198039f15d641\n'"
+[0m08:39:59.257083 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:59.258084 [debug] [MainThread]: Already at 526cb1f, nothing to do.
+[0m08:39:59.258084 [warn ] [MainThread]: [33mWARNING: The git package "https://github.com/dbt-labs/dbt-codegen.git" 
+	is pinned to the "main" branch.
+	This can introduce breaking changes into your project without warning!
+
+See https://docs.getdbt.com/docs/package-management#section-specifying-package-versions[0m
+[0m08:39:59.258084 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m08:39:59.283274 [debug] [MainThread]: STDOUT: "b'526cb1f0e8464d88b931e0249b4198039f15d641\n'"
+[0m08:39:59.284281 [debug] [MainThread]: STDERR: "b''"
+[0m08:39:59.285281 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Found duplicate project "codegen". This occurs when a dependency has the same project name as some other dependency.
+[0m08:39:59.285281 [debug] [MainThread]: Command `dbt deps` failed at 08:39:59.285281 after 5.61 seconds
+[0m08:39:59.286287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D3EC8E000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D43D42F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017D43CBFD70>]}
+[0m08:39:59.286287 [debug] [MainThread]: Flushing usage events
+[0m08:39:59.554205 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:42:40.710512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240ADFD2150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240ADFD38F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240AD495880>]}
+
+
+============================== 08:42:40.714049 | 36a96e2c-c05c-4f06-9947-5f1190f581a1 ==============================
+[0m08:42:40.714049 [info ] [MainThread]: Running with dbt=1.11.9
+[0m08:42:40.715041 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt deps', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m08:42:40.796777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36a96e2c-c05c-4f06-9947-5f1190f581a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240AAD36FC0>]}
+[0m08:42:40.819310 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-vjd5ep_z'
+[0m08:42:40.819310 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m08:42:40.953319 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m08:42:40.954326 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m08:42:41.109228 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m08:42:41.113233 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m08:42:41.158765 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m08:42:41.165286 [info ] [MainThread]: Updating lock file in file path: C:\Repos\jaffle-shop\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5/package-lock.yml
+[0m08:42:41.175276 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-6u8kkrdz'
+[0m08:42:41.177274 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m08:42:41.656637 [info ] [MainThread]: Installed from version 0.14.0
+[0m08:42:41.657634 [info ] [MainThread]: Updated version available: 0.14.1
+[0m08:42:41.657634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '36a96e2c-c05c-4f06-9947-5f1190f581a1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240AF267440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240AF527B90>]}
+[0m08:42:41.657634 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m08:42:42.255003 [info ] [MainThread]: Installed from version 1.3.3
+[0m08:42:42.255003 [info ] [MainThread]: Up to date!
+[0m08:42:42.255003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '36a96e2c-c05c-4f06-9947-5f1190f581a1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240ADDFB140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240AD457200>]}
+[0m08:42:42.256011 [info ] [MainThread]: 
+[0m08:42:42.256011 [info ] [MainThread]: Updates available for packages: ['dbt-labs/codegen']                 
+Update your versions in packages.yml, then run dbt deps
+[0m08:42:42.257011 [debug] [MainThread]: Command `dbt deps` succeeded at 08:42:42.257011 after 1.66 seconds
+[0m08:42:42.258008 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240ADF76960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240ADAA1580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240ADAA1730>]}
+[0m08:42:42.258008 [debug] [MainThread]: Flushing usage events
+[0m08:42:42.535718 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:29:15.644067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183AC734E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183AC75AE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183ACB0A660>]}
+
+
+============================== 09:29:15.660719 | f83d21db-f29e-4e68-a479-762f9d19ce2c ==============================
+[0m09:29:15.660719 [info ] [MainThread]: Running with dbt=1.11.9
+[0m09:29:15.660719 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt deps', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m09:29:15.743978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f83d21db-f29e-4e68-a479-762f9d19ce2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183AE68ADB0>]}
+[0m09:29:15.835883 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-krzfdjo2'
+[0m09:29:15.835883 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m09:29:15.943943 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m09:29:15.943943 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m09:29:15.994506 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m09:29:16.010906 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m09:29:16.044258 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m09:29:16.044258 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m09:29:16.927977 [info ] [MainThread]: Installed from version 0.14.0
+[0m09:29:16.927977 [info ] [MainThread]: Updated version available: 0.14.1
+[0m09:29:16.927977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'f83d21db-f29e-4e68-a479-762f9d19ce2c', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183AE793800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183AD2D8CE0>]}
+[0m09:29:16.927977 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m09:29:17.394817 [info ] [MainThread]: Installed from version 1.3.3
+[0m09:29:17.394817 [info ] [MainThread]: Up to date!
+[0m09:29:17.394817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'f83d21db-f29e-4e68-a479-762f9d19ce2c', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183AC7AEF00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183AC7AE450>]}
+[0m09:29:17.394817 [info ] [MainThread]: 
+[0m09:29:17.394817 [info ] [MainThread]: Updates available for packages: ['dbt-labs/codegen']                 
+Update your versions in packages.yml, then run dbt deps
+[0m09:29:17.394817 [debug] [MainThread]: Command `dbt deps` succeeded at 09:29:17.394817 after 1.85 seconds
+[0m09:29:17.394817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183ABC9FA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183AE68ADB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183AE8A8440>]}
+[0m09:29:17.394817 [debug] [MainThread]: Flushing usage events
+[0m09:29:17.661916 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:29:23.604301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C523044170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C523045EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5230477D0>]}
+
+
+============================== 09:29:23.604301 | d635ef15-b9ed-44c5-bbb4-21b302f1f146 ==============================
+[0m09:29:23.604301 [info ] [MainThread]: Running with dbt=1.11.9
+[0m09:29:23.604301 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m09:29:23.847811 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:29:23.847811 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:29:23.847811 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:29:23.997732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd635ef15-b9ed-44c5-bbb4-21b302f1f146', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C525DC74D0>]}
+[0m09:29:24.031260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd635ef15-b9ed-44c5-bbb4-21b302f1f146', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5260520F0>]}
+[0m09:29:24.047601 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m09:29:24.563356 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m09:29:24.563356 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:29:24.563356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd635ef15-b9ed-44c5-bbb4-21b302f1f146', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C526319CA0>]}
+[0m09:29:28.216078 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found multiple macros named "union_tables_by_prefix" in the project
+  "dbt_fundamentals_on_demand".
+   All macros require unique names, to fix this error rename or remove any
+  duplicates. They can be found in these files:
+      - macros\union_tables_by_prefix.sql
+      - macros\template_example.sql
+[0m09:29:28.216078 [debug] [MainThread]: Command `dbt run` failed at 09:29:28.216078 after 4.71 seconds
+[0m09:29:28.216078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5262811F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C524FAD820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C52619C2C0>]}
+[0m09:29:28.216078 [debug] [MainThread]: Flushing usage events
+[0m09:29:28.500553 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:29:43.723567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014715A6EC60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000147122CDE80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014715B823F0>]}
+
+
+============================== 09:29:43.723567 | 2dac9b26-1a0f-4681-871a-9a13f91ec31b ==============================
+[0m09:29:43.723567 [info ] [MainThread]: Running with dbt=1.11.9
+[0m09:29:43.723567 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m09:29:43.739120 [info ] [MainThread]: dbt version: 1.11.9
+[0m09:29:43.739120 [info ] [MainThread]: python version: 3.12.13
+[0m09:29:43.740187 [info ] [MainThread]: python path: C:\Repos\jaffle-shop\.venv\Scripts\python.exe
+[0m09:29:43.740187 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m09:29:43.972925 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:29:43.973550 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:29:43.973550 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:29:44.040629 [info ] [MainThread]: Using profiles dir at C:\Users\ChristianPaskevicius\.dbt
+[0m09:29:44.040629 [info ] [MainThread]: Using profiles.yml file at C:\Users\ChristianPaskevicius\.dbt\profiles.yml
+[0m09:29:44.040629 [info ] [MainThread]: Using dbt_project.yml file at C:\Repos\jaffle-shop\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\dbt_project.yml
+[0m09:29:44.040629 [info ] [MainThread]: adapter type: snowflake
+[0m09:29:44.040629 [info ] [MainThread]: adapter version: 1.11.4
+[0m09:29:44.122007 [info ] [MainThread]: Configuration:
+[0m09:29:44.123005 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:29:44.123452 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m09:29:44.124031 [info ] [MainThread]: Required dependencies:
+[0m09:29:44.124031 [debug] [MainThread]: Executing "git --help"
+[0m09:29:44.159166 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:29:44.159166 [debug] [MainThread]: STDERR: "b''"
+[0m09:29:44.159166 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:29:44.159166 [info ] [MainThread]: Connection:
+[0m09:29:44.159166 [info ] [MainThread]:   account: ewuupkz-thb76066
+[0m09:29:44.159166 [info ] [MainThread]:   user: pskavs
+[0m09:29:44.159166 [info ] [MainThread]:   database: ANALYTICS
+[0m09:29:44.159166 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m09:29:44.159166 [info ] [MainThread]:   role: None
+[0m09:29:44.159166 [info ] [MainThread]:   schema: dbt_christian
+[0m09:29:44.159166 [info ] [MainThread]:   authenticator: snowflake_jwt
+[0m09:29:44.159166 [info ] [MainThread]:   oauth_client_id: None
+[0m09:29:44.159166 [info ] [MainThread]:   query_tag: None
+[0m09:29:44.159166 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:29:44.159166 [info ] [MainThread]:   host: None
+[0m09:29:44.159166 [info ] [MainThread]:   port: None
+[0m09:29:44.159166 [info ] [MainThread]:   proxy_host: None
+[0m09:29:44.159166 [info ] [MainThread]:   proxy_port: None
+[0m09:29:44.159166 [info ] [MainThread]:   protocol: None
+[0m09:29:44.159166 [info ] [MainThread]:   connect_retries: 1
+[0m09:29:44.159166 [info ] [MainThread]:   connect_timeout: None
+[0m09:29:44.159166 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:29:44.159166 [info ] [MainThread]:   retry_all: False
+[0m09:29:44.159166 [info ] [MainThread]:   insecure_mode: False
+[0m09:29:44.159166 [info ] [MainThread]:   reuse_connections: True
+[0m09:29:44.159166 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m09:29:44.159166 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m09:29:44.159166 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m09:29:44.357450 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:29:48.784025 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:29:48.784025 [debug] [MainThread]: On debug: select 1 as id
+[0m09:29:48.784025 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:29:49.960692 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.172 seconds
+[0m09:29:49.961693 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:29:49.961693 [info ] [MainThread]: [32mAll checks passed![0m
+[0m09:29:49.962696 [debug] [MainThread]: Command `dbt debug` succeeded at 09:29:49.962696 after 6.33 seconds
+[0m09:29:49.962696 [debug] [MainThread]: Connection 'debug' was left open.
+[0m09:29:49.963694 [debug] [MainThread]: On debug: Close
+[0m09:29:50.128488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014717247C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001471849EA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014714EF9A00>]}
+[0m09:29:50.128488 [debug] [MainThread]: Flushing usage events
+[0m09:29:50.429269 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:31:16.828851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E76694FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E792985C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E77C4FA40>]}
+
+
+============================== 09:31:16.832185 | 59a93dc5-d304-4a5f-8927-554c601ce77d ==============================
+[0m09:31:16.832185 [info ] [MainThread]: Running with dbt=1.11.9
+[0m09:31:16.833196 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'log_path': 'c:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m09:31:16.912701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '59a93dc5-d304-4a5f-8927-554c601ce77d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E7A779A90>]}
+[0m09:31:16.981368 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-bk0194zm'
+[0m09:31:16.981368 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m09:31:17.843747 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m09:31:17.844758 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m09:31:17.898439 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m09:31:17.899752 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m09:31:17.943889 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m09:31:17.946895 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m09:31:18.286816 [info ] [MainThread]: Installed from version 0.14.0
+[0m09:31:18.286816 [info ] [MainThread]: Updated version available: 0.14.1
+[0m09:31:18.287816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '59a93dc5-d304-4a5f-8927-554c601ce77d', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E787AB800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E7A8089B0>]}
+[0m09:31:18.287816 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m09:31:18.788046 [info ] [MainThread]: Installed from version 1.3.3
+[0m09:31:18.788046 [info ] [MainThread]: Up to date!
+[0m09:31:18.788046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '59a93dc5-d304-4a5f-8927-554c601ce77d', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E78762120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E78762990>]}
+[0m09:31:18.788046 [info ] [MainThread]: 
+[0m09:31:18.789043 [info ] [MainThread]: Updates available for packages: ['dbt-labs/codegen']                 
+Update your versions in packages.yml, then run dbt deps
+[0m09:31:18.790045 [debug] [MainThread]: Command `cli deps` succeeded at 09:31:18.790045 after 2.07 seconds
+[0m09:31:18.790045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E76694FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E78DFD9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E77AE8D40>]}
+[0m09:31:18.790045 [debug] [MainThread]: Flushing usage events
+[0m09:31:19.050858 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:46:48.376709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A9375DBE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A96240800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A9678D8E0>]}
+
+
+============================== 09:46:48.391875 | dba44be0-6595-43d8-922d-193542e2b5c3 ==============================
+[0m09:46:48.391875 [info ] [MainThread]: Running with dbt=1.11.9
+[0m09:46:48.392651 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m09:46:48.643603 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:46:48.643603 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:46:48.643603 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:46:48.808910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dba44be0-6595-43d8-922d-193542e2b5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A97E23D70>]}
+[0m09:46:48.844046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dba44be0-6595-43d8-922d-193542e2b5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A97E454F0>]}
+[0m09:46:48.844046 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m09:46:49.045149 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m09:46:49.046149 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:46:49.046979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'dba44be0-6595-43d8-922d-193542e2b5c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A99145F10>]}
+[0m09:46:49.294315 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found multiple macros named "union_tables_by_prefix" in the project
+  "dbt_fundamentals_on_demand".
+   All macros require unique names, to fix this error rename or remove any
+  duplicates. They can be found in these files:
+      - macros\union_tables_by_prefix.sql
+      - macros\template_example.sql
+[0m09:46:49.294315 [debug] [MainThread]: Command `dbt run` failed at 09:46:49.294315 after 1.02 seconds
+[0m09:46:49.294315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A9375DBE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A9867BB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A95F1DA00>]}
+[0m09:46:49.294315 [debug] [MainThread]: Flushing usage events
+[0m09:46:49.596408 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:48:02.846482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B73681790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B75D93A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B75FEFF20>]}
+
+
+============================== 09:48:02.850493 | b0ad4b9a-9b7a-44d0-a957-4e2daec40a0a ==============================
+[0m09:48:02.850493 [info ] [MainThread]: Running with dbt=1.11.9
+[0m09:48:02.850493 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m09:48:03.094299 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:48:03.094299 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:48:03.094299 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:48:03.244397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b0ad4b9a-9b7a-44d0-a957-4e2daec40a0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B75E3D9A0>]}
+[0m09:48:03.294159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b0ad4b9a-9b7a-44d0-a957-4e2daec40a0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B768F8B60>]}
+[0m09:48:03.294159 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m09:48:03.474533 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m09:48:03.474533 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:48:03.474533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b0ad4b9a-9b7a-44d0-a957-4e2daec40a0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B78F2AF90>]}
+[0m09:48:04.178238 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_ENV_NAME'
+[0m09:48:04.178238 [debug] [MainThread]: Command `dbt run` failed at 09:48:04.178238 after 1.44 seconds
+[0m09:48:04.178238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B764E3D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B7926E570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016B7926F290>]}
+[0m09:48:04.178238 [debug] [MainThread]: Flushing usage events
+[0m09:48:04.510865 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:50:42.553975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A550EC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A89D7530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AA625340>]}
+
+
+============================== 09:50:42.553975 | c14bda6b-e7e8-48d9-9195-617027a246c2 ==============================
+[0m09:50:42.553975 [info ] [MainThread]: Running with dbt=1.11.9
+[0m09:50:42.553975 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m09:50:42.789209 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:50:42.789209 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:50:42.789209 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:50:42.948454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AB7A6F60>]}
+[0m09:50:42.986659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AB45B560>]}
+[0m09:50:42.986659 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m09:50:43.167929 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m09:50:43.167929 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:50:43.167929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AB875D90>]}
+[0m09:50:44.305112 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.snowflake_spend
+[0m09:50:44.305112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187ABEFD640>]}
+[0m09:50:44.376333 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Repos\jaffle-shop\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\target\manifest.json
+[0m09:50:44.379335 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Repos\jaffle-shop\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\target\semantic_manifest.json
+[0m09:50:44.418405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AC0A65A0>]}
+[0m09:50:44.418405 [info ] [MainThread]: Found 10 models, 12 data tests, 3 sources, 671 macros
+[0m09:50:44.418405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AB965400>]}
+[0m09:50:44.418405 [info ] [MainThread]: 
+[0m09:50:44.418405 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:50:44.418405 [info ] [MainThread]: 
+[0m09:50:44.418405 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:50:44.427513 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m09:50:44.468590 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m09:50:44.469593 [debug] [ThreadPool]: On list_ANALYTICS: show terse schemas in database ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+[0m09:50:44.469593 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:50:45.605666 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.140 seconds
+[0m09:50:45.611064 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ANALYTICS, now create_ANALYTICS_dbt_christian)
+[0m09:50:45.611064 [debug] [ThreadPool]: Creating schema "database: "ANALYTICS"
+schema: "dbt_christian"
+"
+[0m09:50:45.613238 [debug] [ThreadPool]: Using snowflake connection "create_ANALYTICS_dbt_christian"
+[0m09:50:45.613238 [debug] [ThreadPool]: On create_ANALYTICS_dbt_christian: create schema if not exists ANALYTICS.dbt_christian
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "connection_name": "create_ANALYTICS_dbt_christian"} */
+[0m09:50:45.936328 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.321 seconds
+[0m09:50:45.938588 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_dbt_christian'
+[0m09:50:45.945841 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_dbt_christian"
+[0m09:50:45.945841 [debug] [ThreadPool]: On list_ANALYTICS_dbt_christian: show objects in ANALYTICS.dbt_christian
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "connection_name": "list_ANALYTICS_dbt_christian"} */;
+[0m09:50:45.945841 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:50:46.791258 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.847 seconds
+[0m09:50:46.791258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A6136120>]}
+[0m09:50:46.836948 [debug] [Thread-2 (]: Began running node model.dbt_fundamentals_on_demand.date_spine
+[0m09:50:46.836948 [debug] [Thread-3 (]: Began running node model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers
+[0m09:50:46.836948 [debug] [Thread-4 (]: Began running node model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders
+[0m09:50:46.836948 [debug] [Thread-5 (]: Began running node model.dbt_fundamentals_on_demand.stg_stripe__payment
+[0m09:50:46.836948 [info ] [Thread-2 (]: 1 of 9 START sql view model dbt_christian.date_spine ........................... [RUN]
+[0m09:50:46.836948 [info ] [Thread-3 (]: 2 of 9 START sql view model dbt_christian.stg_jaffle_shop__customers ........... [RUN]
+[0m09:50:46.836948 [info ] [Thread-4 (]: 3 of 9 START sql view model dbt_christian.stg_jaffle_shop__orders .............. [RUN]
+[0m09:50:46.836948 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_fundamentals_on_demand.date_spine'
+[0m09:50:46.836948 [info ] [Thread-5 (]: 4 of 9 START sql view model dbt_christian.stg_stripe__payment .................. [RUN]
+[0m09:50:46.836948 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers'
+[0m09:50:46.836948 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders'
+[0m09:50:46.836948 [debug] [Thread-2 (]: Began compiling node model.dbt_fundamentals_on_demand.date_spine
+[0m09:50:46.836948 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.dbt_fundamentals_on_demand.stg_stripe__payment'
+[0m09:50:46.836948 [debug] [Thread-3 (]: Began compiling node model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers
+[0m09:50:46.836948 [debug] [Thread-4 (]: Began compiling node model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders
+[0m09:50:46.836948 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.date_spine"
+[0m09:50:46.836948 [debug] [Thread-5 (]: Began compiling node model.dbt_fundamentals_on_demand.stg_stripe__payment
+[0m09:50:46.854106 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders"
+[0m09:50:46.854831 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers"
+[0m09:50:46.854831 [debug] [Thread-2 (]: On model.dbt_fundamentals_on_demand.date_spine: select datediff(
+        day,
+        cast('2019-01-01' as date),
+        cast('2020-01-01' as date)
+        )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.date_spine"} */
+[0m09:50:46.857508 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.stg_stripe__payment"
+[0m09:50:46.857830 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:50:46.889408 [debug] [Thread-4 (]: Began executing node model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders
+[0m09:50:46.905119 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders"
+[0m09:50:46.906127 [debug] [Thread-5 (]: Began executing node model.dbt_fundamentals_on_demand.stg_stripe__payment
+[0m09:50:46.908140 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.stg_stripe__payment"
+[0m09:50:46.909140 [debug] [Thread-3 (]: Began executing node model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers
+[0m09:50:46.912147 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers"
+[0m09:50:46.917146 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders"
+[0m09:50:46.918666 [debug] [Thread-4 (]: On model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders: create or replace   view ANALYTICS.dbt_christian.stg_jaffle_shop__orders
+  
+  
+  
+  
+  as (
+    select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status as order_status
+from raw.jaffle_shop.orders
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders"} */;
+[0m09:50:46.919592 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m09:50:46.919592 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers"
+[0m09:50:46.919592 [debug] [Thread-3 (]: On model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers: create or replace   view ANALYTICS.dbt_christian.stg_jaffle_shop__customers
+  
+  
+  
+  
+  as (
+    select 
+    id as customer_id,
+    first_name,
+    last_name
+from raw.jaffle_shop.customers
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers"} */;
+[0m09:50:46.919592 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:50:46.919592 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.stg_stripe__payment"
+[0m09:50:46.919592 [debug] [Thread-5 (]: On model.dbt_fundamentals_on_demand.stg_stripe__payment: create or replace   view ANALYTICS.dbt_christian.stg_stripe__payment
+  
+  
+  
+  
+  as (
+    WITH
+SOURCE AS(
+    SELECT * FROM raw.stripe.payment
+),
+RENAMED as(
+    SELECT
+        id as payment_id,
+        orderid as order_id,
+        paymentmethod as payment_method,
+        status as payment_status,
+        ROUND(amount / 100, 2)
+ as payment_amount, 
+        created as payment_created,
+        _batched_at
+    FROM SOURCE
+)
+SELECT * FROM renamed
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.stg_stripe__payment"} */;
+[0m09:50:46.919592 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m09:50:47.822438 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.968 seconds
+[0m09:50:47.826338 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.date_spine"
+[0m09:50:47.826338 [debug] [Thread-2 (]: Began executing node model.dbt_fundamentals_on_demand.date_spine
+[0m09:50:47.826338 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.date_spine"
+[0m09:50:47.826338 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.date_spine"
+[0m09:50:47.826338 [debug] [Thread-2 (]: On model.dbt_fundamentals_on_demand.date_spine: create or replace   view ANALYTICS.dbt_christian.date_spine
+  
+  
+  
+  
+  as (
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 365
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+    dateadd(
+        day,
+        row_number() over (order by generated_number) - 1,
+        cast('2019-01-01' as date)
+        )
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast('2020-01-01' as date)
+
+)
+
+select * from filtered
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.date_spine"} */;
+[0m09:50:47.953690 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.039 seconds
+[0m09:50:47.994266 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AA67D0A0>]}
+[0m09:50:47.994266 [info ] [Thread-5 (]: 4 of 9 OK created sql view model dbt_christian.stg_stripe__payment ............. [[32mSUCCESS 1[0m in 1.14s]
+[0m09:50:47.995260 [debug] [Thread-5 (]: Finished running node model.dbt_fundamentals_on_demand.stg_stripe__payment
+[0m09:50:47.995260 [debug] [Thread-5 (]: Began running node model.dbt_fundamentals_on_demand.union_tables
+[0m09:50:47.995260 [info ] [Thread-5 (]: 5 of 9 START sql view model dbt_christian.union_tables ......................... [RUN]
+[0m09:50:47.996242 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.stg_stripe__payment, now model.dbt_fundamentals_on_demand.union_tables)
+[0m09:50:47.996242 [debug] [Thread-5 (]: Began compiling node model.dbt_fundamentals_on_demand.union_tables
+[0m09:50:48.005217 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.union_tables"
+[0m09:50:48.005217 [debug] [Thread-5 (]: On model.dbt_fundamentals_on_demand.union_tables: select distinct
+            table_schema as "table_schema",
+            table_name as "table_name",
+            
+            case table_type
+                when 'BASE TABLE' then 'table'
+                when 'EXTERNAL TABLE' then 'external'
+                when 'MATERIALIZED VIEW' then 'materializedview'
+                else lower(table_type)
+            end as "table_type"
+
+        from raw.information_schema.tables
+        where table_schema ilike 'dbt_learn_jinja'
+        and table_name ilike 'orders__%'
+        and table_name not ilike ''
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.union_tables"} */
+[0m09:50:48.010032 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.095 seconds
+[0m09:50:48.010032 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AD75B500>]}
+[0m09:50:48.010032 [info ] [Thread-4 (]: 3 of 9 OK created sql view model dbt_christian.stg_jaffle_shop__orders ......... [[32mSUCCESS 1[0m in 1.17s]
+[0m09:50:48.010032 [debug] [Thread-4 (]: Finished running node model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders
+[0m09:50:48.010032 [debug] [Thread-4 (]: Began running node model.dbt_fundamentals_on_demand.int_orders__pivoted
+[0m09:50:48.010032 [info ] [Thread-4 (]: 6 of 9 START sql view model dbt_christian.int_orders__pivoted .................. [RUN]
+[0m09:50:48.010032 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders, now model.dbt_fundamentals_on_demand.int_orders__pivoted)
+[0m09:50:48.010032 [debug] [Thread-4 (]: Began compiling node model.dbt_fundamentals_on_demand.int_orders__pivoted
+[0m09:50:48.021288 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.int_orders__pivoted"
+[0m09:50:48.021288 [debug] [Thread-4 (]: Began executing node model.dbt_fundamentals_on_demand.int_orders__pivoted
+[0m09:50:48.022977 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.int_orders__pivoted"
+[0m09:50:48.022977 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.int_orders__pivoted"
+[0m09:50:48.025170 [debug] [Thread-4 (]: On model.dbt_fundamentals_on_demand.int_orders__pivoted: create or replace   view ANALYTICS.dbt_christian.int_orders__pivoted
+  
+  
+  
+  
+  as (
+    with payments as(
+    
+    SELECT *
+    FROM ANALYTICS.dbt_christian.stg_stripe__payment
+    WHERE PAYMENT_STATUS = 'success'
+), pivoted as
+(
+    select 
+    order_id,
+    sum (case when payment_method = 'bank_transfer' then payment_amount else 0 end) as bank_transfer_amount
+    from payments
+    group by 1
+)
+select * from pivoted
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.int_orders__pivoted"} */;
+[0m09:50:48.071258 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.150 seconds
+[0m09:50:48.073268 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AD868890>]}
+[0m09:50:48.073268 [info ] [Thread-3 (]: 2 of 9 OK created sql view model dbt_christian.stg_jaffle_shop__customers ...... [[32mSUCCESS 1[0m in 1.24s]
+[0m09:50:48.074261 [debug] [Thread-3 (]: Finished running node model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers
+[0m09:50:48.074261 [debug] [Thread-3 (]: Began running node model.dbt_fundamentals_on_demand.customers_daily_summary
+[0m09:50:48.074261 [info ] [Thread-3 (]: 7 of 9 START sql view model dbt_christian.customers_daily_summary .............. [RUN]
+[0m09:50:48.075269 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers, now model.dbt_fundamentals_on_demand.customers_daily_summary)
+[0m09:50:48.075269 [debug] [Thread-3 (]: Began compiling node model.dbt_fundamentals_on_demand.customers_daily_summary
+[0m09:50:48.079267 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.customers_daily_summary"
+[0m09:50:48.080415 [debug] [Thread-3 (]: Began executing node model.dbt_fundamentals_on_demand.customers_daily_summary
+[0m09:50:48.081421 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.customers_daily_summary"
+[0m09:50:48.082427 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.customers_daily_summary"
+[0m09:50:48.083424 [debug] [Thread-3 (]: On model.dbt_fundamentals_on_demand.customers_daily_summary: create or replace   view ANALYTICS.dbt_christian.customers_daily_summary
+  
+  
+  
+  
+  as (
+    SELECT
+    customer_id,
+    order_date,
+    md5(cast(coalesce(cast(customer_id as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(order_date as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as primary_key,
+    count(*) as c
+FROM ANALYTICS.dbt_christian.stg_jaffle_shop__orders
+GROUP BY 1,2
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.customers_daily_summary"} */;
+[0m09:50:48.187195 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.361 seconds
+[0m09:50:48.187195 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AD7020C0>]}
+[0m09:50:48.187195 [info ] [Thread-2 (]: 1 of 9 OK created sql view model dbt_christian.date_spine ...................... [[32mSUCCESS 1[0m in 1.35s]
+[0m09:50:48.187195 [debug] [Thread-2 (]: Finished running node model.dbt_fundamentals_on_demand.date_spine
+[0m09:50:48.187195 [debug] [Thread-2 (]: Began running node model.dbt_fundamentals_on_demand.fct_orders
+[0m09:50:48.187195 [info ] [Thread-2 (]: 8 of 9 START sql table model dbt_christian.fct_orders .......................... [RUN]
+[0m09:50:48.187195 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.date_spine, now model.dbt_fundamentals_on_demand.fct_orders)
+[0m09:50:48.187195 [debug] [Thread-2 (]: Began compiling node model.dbt_fundamentals_on_demand.fct_orders
+[0m09:50:48.204613 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.fct_orders"
+[0m09:50:48.205488 [debug] [Thread-2 (]: Began executing node model.dbt_fundamentals_on_demand.fct_orders
+[0m09:50:48.220625 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.fct_orders"
+[0m09:50:48.220625 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.fct_orders"
+[0m09:50:48.220625 [debug] [Thread-2 (]: On model.dbt_fundamentals_on_demand.fct_orders: create or replace transient table ANALYTICS.dbt_christian.fct_orders
+    
+    
+    
+    as (with orders as  (
+    select * from ANALYTICS.dbt_christian.stg_jaffle_shop__orders
+),
+
+payments as (
+    select * from ANALYTICS.dbt_christian.stg_stripe__payment
+),
+
+order_payments as (
+    select
+        order_id,
+        sum (case when payment_status = 'success' then payment_amount end) as amount
+
+    from payments
+    group by 1
+),
+
+ final as (
+
+    select
+        orders.order_id,
+        orders.customer_id,
+        orders.order_date,
+        coalesce (order_payments.amount, 0) as amount
+
+    from orders
+    left join order_payments using (order_id)
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.fct_orders"} */;
+[0m09:50:48.538241 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.523 seconds
+[0m09:50:48.552857 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AD892330>]}
+[0m09:50:48.552857 [info ] [Thread-4 (]: 6 of 9 OK created sql view model dbt_christian.int_orders__pivoted ............. [[32mSUCCESS 1[0m in 0.54s]
+[0m09:50:48.552857 [debug] [Thread-4 (]: Finished running node model.dbt_fundamentals_on_demand.int_orders__pivoted
+[0m09:50:48.621780 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.538 seconds
+[0m09:50:48.623773 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AD737BF0>]}
+[0m09:50:48.624780 [info ] [Thread-3 (]: 7 of 9 OK created sql view model dbt_christian.customers_daily_summary ......... [[32mSUCCESS 1[0m in 0.55s]
+[0m09:50:48.624780 [debug] [Thread-3 (]: Finished running node model.dbt_fundamentals_on_demand.customers_daily_summary
+[0m09:50:49.416811 [debug] [Thread-5 (]: SQL status: SUCCESS 2 in 1.411 seconds
+[0m09:50:49.416811 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.union_tables"
+[0m09:50:49.418819 [debug] [Thread-5 (]: Began executing node model.dbt_fundamentals_on_demand.union_tables
+[0m09:50:49.421051 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.union_tables"
+[0m09:50:49.421051 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.union_tables"
+[0m09:50:49.421051 [debug] [Thread-5 (]: On model.dbt_fundamentals_on_demand.union_tables: create or replace   view ANALYTICS.dbt_christian.union_tables
+  
+  
+  
+  
+  as (
+    
+    
+    
+        
+        select * from raw.DBT_LEARN_JINJA.ORDERS__AMAZON
+    
+        
+            union all
+        
+        select * from raw.DBT_LEARN_JINJA.ORDERS__SHOPIFY
+    
+    
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.union_tables"} */;
+[0m09:50:49.956416 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.541 seconds
+[0m09:50:49.956416 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AD892B10>]}
+[0m09:50:49.970722 [info ] [Thread-5 (]: 5 of 9 OK created sql view model dbt_christian.union_tables .................... [[32mSUCCESS 1[0m in 1.96s]
+[0m09:50:49.973708 [debug] [Thread-2 (]: SQL status: SUCCESS 99 in 1.749 seconds
+[0m09:50:49.973708 [debug] [Thread-5 (]: Finished running node model.dbt_fundamentals_on_demand.union_tables
+[0m09:50:49.977756 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AD6E7860>]}
+[0m09:50:49.979773 [info ] [Thread-2 (]: 8 of 9 OK created sql table model dbt_christian.fct_orders ..................... [[32mSUCCESS 99[0m in 1.79s]
+[0m09:50:49.982253 [debug] [Thread-2 (]: Finished running node model.dbt_fundamentals_on_demand.fct_orders
+[0m09:50:49.983939 [debug] [Thread-4 (]: Began running node model.dbt_fundamentals_on_demand.dim_customers
+[0m09:50:49.984955 [info ] [Thread-4 (]: 9 of 9 START sql table model dbt_christian.dim_customers ....................... [RUN]
+[0m09:50:49.988533 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.int_orders__pivoted, now model.dbt_fundamentals_on_demand.dim_customers)
+[0m09:50:49.990057 [debug] [Thread-4 (]: Began compiling node model.dbt_fundamentals_on_demand.dim_customers
+[0m09:50:49.994010 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.dim_customers"
+[0m09:50:49.994010 [debug] [Thread-4 (]: Began executing node model.dbt_fundamentals_on_demand.dim_customers
+[0m09:50:49.998750 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.dim_customers"
+[0m09:50:49.999752 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.dim_customers"
+[0m09:50:49.999752 [debug] [Thread-4 (]: On model.dbt_fundamentals_on_demand.dim_customers: create or replace transient table ANALYTICS.dbt_christian.dim_customers
+    
+    
+    
+    as (with customers as (
+
+    select * from ANALYTICS.dbt_christian.stg_jaffle_shop__customers
+
+),
+
+orders as (
+
+    select * from ANALYTICS.dbt_christian.fct_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders,
+        sum(amount) as lifetime_value
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders,
+        customer_orders.lifetime_value
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.dim_customers"} */;
+[0m09:50:51.354954 [debug] [Thread-4 (]: SQL status: SUCCESS 100 in 1.359 seconds
+[0m09:50:51.360215 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c14bda6b-e7e8-48d9-9195-617027a246c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AD8F9DF0>]}
+[0m09:50:51.360215 [info ] [Thread-4 (]: 9 of 9 OK created sql table model dbt_christian.dim_customers .................. [[32mSUCCESS 100[0m in 1.37s]
+[0m09:50:51.360215 [debug] [Thread-4 (]: Finished running node model.dbt_fundamentals_on_demand.dim_customers
+[0m09:50:51.360215 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:50:51.360215 [debug] [MainThread]: Connection 'create_ANALYTICS_dbt_christian' was left open.
+[0m09:50:51.360215 [debug] [MainThread]: On create_ANALYTICS_dbt_christian: Close
+[0m09:50:51.538515 [debug] [MainThread]: Connection 'list_ANALYTICS_dbt_christian' was left open.
+[0m09:50:51.538515 [debug] [MainThread]: On list_ANALYTICS_dbt_christian: Close
+[0m09:50:51.690379 [debug] [MainThread]: Connection 'model.dbt_fundamentals_on_demand.fct_orders' was left open.
+[0m09:50:51.691375 [debug] [MainThread]: On model.dbt_fundamentals_on_demand.fct_orders: Close
+[0m09:50:51.822430 [debug] [MainThread]: Connection 'model.dbt_fundamentals_on_demand.customers_daily_summary' was left open.
+[0m09:50:51.822430 [debug] [MainThread]: On model.dbt_fundamentals_on_demand.customers_daily_summary: Close
+[0m09:50:51.952131 [debug] [MainThread]: Connection 'model.dbt_fundamentals_on_demand.dim_customers' was left open.
+[0m09:50:51.954785 [debug] [MainThread]: On model.dbt_fundamentals_on_demand.dim_customers: Close
+[0m09:50:52.089507 [debug] [MainThread]: Connection 'model.dbt_fundamentals_on_demand.union_tables' was left open.
+[0m09:50:52.089507 [debug] [MainThread]: On model.dbt_fundamentals_on_demand.union_tables: Close
+[0m09:50:52.231554 [info ] [MainThread]: 
+[0m09:50:52.232558 [info ] [MainThread]: Finished running 2 table models, 7 view models in 0 hours 0 minutes and 7.81 seconds (7.81s).
+[0m09:50:52.233553 [debug] [MainThread]: Command end result
+[0m09:50:52.315647 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Repos\jaffle-shop\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\target\manifest.json
+[0m09:50:52.317648 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Repos\jaffle-shop\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\target\semantic_manifest.json
+[0m09:50:52.322659 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Repos\jaffle-shop\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\target\run_results.json
+[0m09:50:52.323647 [info ] [MainThread]: 
+[0m09:50:52.323647 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:50:52.323647 [info ] [MainThread]: 
+[0m09:50:52.324647 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+[0m09:50:52.324647 [debug] [MainThread]: Command `dbt run` succeeded at 09:50:52.324647 after 9.86 seconds
+[0m09:50:52.325654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187A5F623F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AD633980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000187AD6334D0>]}
+[0m09:50:52.325654 [debug] [MainThread]: Flushing usage events
+[0m09:50:52.672566 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:06:13.428491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C527A1AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C527A1B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C527A1B80>]}
+
+
+============================== 10:06:13.428491 | 54a277bc-ee67-43da-a997-eb6af9702ce0 ==============================
+[0m10:06:13.428491 [info ] [MainThread]: Running with dbt=1.11.9
+[0m10:06:13.428491 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt ', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'c:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m10:06:13.512405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '54a277bc-ee67-43da-a997-eb6af9702ce0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C54156000>]}
+[0m10:06:13.597962 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-frd7z6fa'
+[0m10:06:13.597962 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m10:06:13.678057 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m10:06:13.678057 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m10:06:13.725204 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m10:06:13.727936 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m10:06:13.777666 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m10:06:13.794551 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m10:06:14.307415 [info ] [MainThread]: Installed from version 0.14.0
+[0m10:06:14.307415 [info ] [MainThread]: Updated version available: 0.14.1
+[0m10:06:14.307415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '54a277bc-ee67-43da-a997-eb6af9702ce0', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C5417B020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C53FB8260>]}
+[0m10:06:14.307415 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m10:06:14.975022 [error] [MainThread]: Encountered an error:
+[WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.3.3'
+[0m10:06:15.067668 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\ChristianPaskevicius\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 847, in move
+    os.rename(src, real_dst)
+PermissionError: [WinError 5] Access is denied: 'dbt_packages\\dbt-utils-1.3.3' -> 'dbt_packages\\dbt_utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\cli\requires.py", line 258, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\cli\main.py", line 466, in deps
+    results = task.run()
+              ^^^^^^^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\task\deps.py", line 332, in run
+    package.install(self.project, renderer)
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\deps\registry.py", line 63, in install
+    self._install(project, renderer)
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\deps\base.py", line 121, in _install
+    connection_exception_retry(download_untar_fn, 5)
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt_common\utils\connection.py", line 22, in connection_exception_retry
+    return fn()
+           ^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\deps\base.py", line 133, in download_and_untar
+    system.untar_package(tar_path, deps_path, package_name)
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt_common\clients\system.py", line 660, in untar_package
+    dbt_common.clients.system.rename(downloaded_path, desired_path, force=True)
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt_common\clients\system.py", line 617, in rename
+    shutil.move(from_path, to_path)
+  File "C:\Users\ChristianPaskevicius\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 865, in move
+    rmtree(src)
+  File "C:\Users\ChristianPaskevicius\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ChristianPaskevicius\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 639, in _rmtree_unsafe
+    onexc(os.rmdir, path, err)
+  File "C:\Users\ChristianPaskevicius\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 637, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.3.3'
+
+[0m10:06:15.067668 [debug] [MainThread]: Command `cli deps` failed at 10:06:15.067668 after 1.75 seconds
+[0m10:06:15.067668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C53F72BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C52CC63F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C5422FDD0>]}
+[0m10:06:15.067668 [debug] [MainThread]: Flushing usage events
+[0m10:06:15.360928 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:14:54.693492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE668B29F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE6A5899A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE69740D70>]}
+
+
+============================== 10:14:54.696493 | 5494ee9b-481d-4954-86bc-33c4da139f24 ==============================
+[0m10:14:54.696493 [info ] [MainThread]: Running with dbt=1.11.9
+[0m10:14:54.697494 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'log_path': 'c:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m10:14:54.767074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5494ee9b-481d-4954-86bc-33c4da139f24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE6BCC7260>]}
+[0m10:14:54.884509 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-pv0dmojh'
+[0m10:14:54.884509 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m10:14:55.100729 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m10:14:55.101734 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m10:14:55.240624 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m10:14:55.243624 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m10:14:55.282626 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m10:14:55.285729 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m10:14:55.642973 [info ] [MainThread]: Installed from version 0.14.0
+[0m10:14:55.642973 [info ] [MainThread]: Updated version available: 0.14.1
+[0m10:14:55.643973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '5494ee9b-481d-4954-86bc-33c4da139f24', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE6BD7A900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE69CC6B70>]}
+[0m10:14:55.643973 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m10:14:56.122931 [info ] [MainThread]: Installed from version 1.3.3
+[0m10:14:56.122931 [info ] [MainThread]: Up to date!
+[0m10:14:56.122931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '5494ee9b-481d-4954-86bc-33c4da139f24', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE6BC742F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE6BD29B80>]}
+[0m10:14:56.122931 [info ] [MainThread]: 
+[0m10:14:56.122931 [info ] [MainThread]: Updates available for packages: ['dbt-labs/codegen']                 
+Update your versions in packages.yml, then run dbt deps
+[0m10:14:56.122931 [debug] [MainThread]: Command `cli deps` succeeded at 10:14:56.122931 after 1.55 seconds
+[0m10:14:56.122931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE668B29F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE6A7D92B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AE6BCC7260>]}
+[0m10:14:56.122931 [debug] [MainThread]: Flushing usage events
+[0m10:14:56.401804 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:11:55.591425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139EDD29040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139F1A118E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139EDE46450>]}
+
+
+============================== 16:11:55.594283 | a020061a-92ee-4ba7-a695-9a12fc3562e6 ==============================
+[0m16:11:55.594283 [info ] [MainThread]: Running with dbt=1.11.9
+[0m16:11:55.595483 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'log_path': 'c:\\Repos\\jaffle-shop\\dbt-cloud-managed-repositories-dbt-cloud-70471823547411-jaffle-shop-8fe54170dc8093f22bfd41cd72d8ed4cc1a500e5\\logs'}
+[0m16:11:55.691397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a020061a-92ee-4ba7-a695-9a12fc3562e6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139F160E5A0>]}
+[0m16:11:55.772747 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-9ithvxc5'
+[0m16:11:55.772747 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:11:55.888474 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:11:55.890485 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m16:11:55.930468 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m16:11:55.932464 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:11:55.987789 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:11:55.990792 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m16:11:56.344970 [info ] [MainThread]: Installed from version 0.14.0
+[0m16:11:56.344970 [info ] [MainThread]: Updated version available: 0.14.1
+[0m16:11:56.345971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'a020061a-92ee-4ba7-a695-9a12fc3562e6', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139F3016F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139F2EC01D0>]}
+[0m16:11:56.345971 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:11:57.323115 [error] [MainThread]: Encountered an error:
+[WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.3.3'
+[0m16:11:57.477047 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\ChristianPaskevicius\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 847, in move
+    os.rename(src, real_dst)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.3.3' -> 'dbt_packages\\dbt_utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\cli\requires.py", line 258, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\cli\main.py", line 466, in deps
+    results = task.run()
+              ^^^^^^^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\task\deps.py", line 332, in run
+    package.install(self.project, renderer)
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\deps\registry.py", line 63, in install
+    self._install(project, renderer)
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\deps\base.py", line 121, in _install
+    connection_exception_retry(download_untar_fn, 5)
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt_common\utils\connection.py", line 22, in connection_exception_retry
+    return fn()
+           ^^^^
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt\deps\base.py", line 133, in download_and_untar
+    system.untar_package(tar_path, deps_path, package_name)
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt_common\clients\system.py", line 660, in untar_package
+    dbt_common.clients.system.rename(downloaded_path, desired_path, force=True)
+  File "c:\Repos\jaffle-shop\.venv\Lib\site-packages\dbt_common\clients\system.py", line 617, in rename
+    shutil.move(from_path, to_path)
+  File "C:\Users\ChristianPaskevicius\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 865, in move
+    rmtree(src)
+  File "C:\Users\ChristianPaskevicius\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ChristianPaskevicius\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 639, in _rmtree_unsafe
+    onexc(os.rmdir, path, err)
+  File "C:\Users\ChristianPaskevicius\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 637, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.3.3'
+
+[0m16:11:57.478047 [debug] [MainThread]: Command `cli deps` failed at 16:11:57.478047 after 2.01 seconds
+[0m16:11:57.479048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139F1AC6A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139F1A91340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000139F303F050>]}
+[0m16:11:57.479048 [debug] [MainThread]: Flushing usage events
+[0m16:11:57.770987 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:12.612952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017585470560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001758540DD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017588F84470>]}
+
+
+============================== 16:25:12.616958 | a1c8af58-3dae-413e-b143-1fafcfae8a81 ==============================
+[0m16:25:12.616958 [info ] [MainThread]: Running with dbt=1.11.9
+[0m16:25:12.616958 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\logs'}
+[0m16:25:12.630082 [info ] [MainThread]: dbt version: 1.11.9
+[0m16:25:12.631084 [info ] [MainThread]: python version: 3.12.13
+[0m16:25:12.631084 [info ] [MainThread]: python path: C:\Repos\jaffle-shop\.venv\Scripts\python.exe
+[0m16:25:12.632082 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m16:25:12.898457 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m16:25:12.898457 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m16:25:12.898457 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m16:25:12.974108 [info ] [MainThread]: Using profiles dir at C:\Users\ChristianPaskevicius\.dbt
+[0m16:25:12.976377 [info ] [MainThread]: Using profiles.yml file at C:\Users\ChristianPaskevicius\.dbt\profiles.yml
+[0m16:25:12.976377 [info ] [MainThread]: Using dbt_project.yml file at C:\Repos\jaffle-shop\dbt_project.yml
+[0m16:25:12.977462 [info ] [MainThread]: adapter type: snowflake
+[0m16:25:12.977462 [info ] [MainThread]: adapter version: 1.11.4
+[0m16:25:13.055787 [info ] [MainThread]: Configuration:
+[0m16:25:13.055787 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:25:13.056788 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:25:13.056788 [info ] [MainThread]: Required dependencies:
+[0m16:25:13.056788 [debug] [MainThread]: Executing "git --help"
+[0m16:25:13.097856 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:25:13.098859 [debug] [MainThread]: STDERR: "b''"
+[0m16:25:13.098859 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:25:13.098859 [info ] [MainThread]: Connection:
+[0m16:25:13.099864 [info ] [MainThread]:   account: ewuupkz-thb76066
+[0m16:25:13.099864 [info ] [MainThread]:   user: pskavs
+[0m16:25:13.100860 [info ] [MainThread]:   database: ANALYTICS
+[0m16:25:13.100860 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m16:25:13.100860 [info ] [MainThread]:   role: None
+[0m16:25:13.100860 [info ] [MainThread]:   schema: dbt_christian
+[0m16:25:13.100860 [info ] [MainThread]:   authenticator: snowflake_jwt
+[0m16:25:13.101857 [info ] [MainThread]:   oauth_client_id: None
+[0m16:25:13.101857 [info ] [MainThread]:   query_tag: None
+[0m16:25:13.101857 [info ] [MainThread]:   client_session_keep_alive: False
+[0m16:25:13.101857 [info ] [MainThread]:   host: None
+[0m16:25:13.102864 [info ] [MainThread]:   port: None
+[0m16:25:13.102864 [info ] [MainThread]:   proxy_host: None
+[0m16:25:13.102864 [info ] [MainThread]:   proxy_port: None
+[0m16:25:13.103864 [info ] [MainThread]:   protocol: None
+[0m16:25:13.103864 [info ] [MainThread]:   connect_retries: 1
+[0m16:25:13.103864 [info ] [MainThread]:   connect_timeout: None
+[0m16:25:13.103864 [info ] [MainThread]:   retry_on_database_errors: False
+[0m16:25:13.104864 [info ] [MainThread]:   retry_all: False
+[0m16:25:13.104864 [info ] [MainThread]:   insecure_mode: False
+[0m16:25:13.104864 [info ] [MainThread]:   reuse_connections: True
+[0m16:25:13.105864 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m16:25:13.105864 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m16:25:13.105864 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m16:25:13.302624 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m16:25:13.344658 [debug] [MainThread]: Using snowflake connection "debug"
+[0m16:25:13.344658 [debug] [MainThread]: On debug: select 1 as id
+[0m16:25:13.345658 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:25:14.251765 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.906 seconds
+[0m16:25:14.252689 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:25:14.252689 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:25:14.253685 [debug] [MainThread]: Command `dbt debug` succeeded at 16:25:14.253685 after 1.75 seconds
+[0m16:25:14.253685 [debug] [MainThread]: Connection 'debug' was left open.
+[0m16:25:14.253685 [debug] [MainThread]: On debug: Close
+[0m16:25:14.462025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017585470560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001758B25F620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001758B57BE60>]}
+[0m16:25:14.463032 [debug] [MainThread]: Flushing usage events
+[0m16:25:14.744873 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:18.974368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B346A750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B62E10A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B62BDC70>]}
+
+
+============================== 16:25:18.977378 | 7fdb50d7-8a92-4018-a82e-454a7073b577 ==============================
+[0m16:25:18.977378 [info ] [MainThread]: Running with dbt=1.11.9
+[0m16:25:18.978380 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'invocation_command': 'dbt ', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'c:\\Repos\\jaffle-shop\\logs'}
+[0m16:25:19.056360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7fdb50d7-8a92-4018-a82e-454a7073b577', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B3563A40>]}
+[0m16:25:19.150753 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-4t87v834'
+[0m16:25:19.150753 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:25:19.202380 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:25:19.203379 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m16:25:19.244510 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m16:25:19.246525 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:25:19.288691 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:25:19.291697 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m16:25:19.651618 [info ] [MainThread]: Installed from version 0.14.0
+[0m16:25:19.652619 [info ] [MainThread]: Updated version available: 0.14.1
+[0m16:25:19.652619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '7fdb50d7-8a92-4018-a82e-454a7073b577', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B7D97EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B5C1B830>]}
+[0m16:25:19.652619 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:25:20.155011 [info ] [MainThread]: Installed from version 1.3.3
+[0m16:25:20.155011 [info ] [MainThread]: Up to date!
+[0m16:25:20.155011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '7fdb50d7-8a92-4018-a82e-454a7073b577', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B5C19D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B5C1B830>]}
+[0m16:25:20.156012 [info ] [MainThread]: 
+[0m16:25:20.156012 [info ] [MainThread]: Updates available for packages: ['dbt-labs/codegen']                 
+Update your versions in packages.yml, then run dbt deps
+[0m16:25:20.157453 [debug] [MainThread]: Command `cli deps` succeeded at 16:25:20.157453 after 1.31 seconds
+[0m16:25:20.157453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B5C77260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B5C772C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243B5C77590>]}
+[0m16:25:20.157453 [debug] [MainThread]: Flushing usage events
+[0m16:25:20.439663 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:16:46.015997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0CCA13890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0CCA11490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0C929E750>]}
+
+
+============================== 15:16:46.019001 | 185946c4-13db-4ad0-92c8-6fd2f90dc20c ==============================
+[0m15:16:46.019001 [info ] [MainThread]: Running with dbt=1.11.9
+[0m15:16:46.019997 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt ', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'c:\\Repos\\jaffle-shop\\logs'}
+[0m15:16:46.113190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '185946c4-13db-4ad0-92c8-6fd2f90dc20c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0CC8F1BE0>]}
+[0m15:16:46.195187 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-u3dy8wxw'
+[0m15:16:46.195187 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:16:46.856390 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:16:46.858389 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m15:16:46.902021 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m15:16:46.904689 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:16:46.966111 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:16:46.969624 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m15:16:47.358133 [info ] [MainThread]: Installed from version 0.14.0
+[0m15:16:47.358133 [info ] [MainThread]: Updated version available: 0.14.1
+[0m15:16:47.358133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '185946c4-13db-4ad0-92c8-6fd2f90dc20c', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0CE42C6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0CE2177D0>]}
+[0m15:16:47.359127 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:16:47.896010 [info ] [MainThread]: Installed from version 1.3.3
+[0m15:16:47.896010 [info ] [MainThread]: Up to date!
+[0m15:16:47.896010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '185946c4-13db-4ad0-92c8-6fd2f90dc20c', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0CE53AEA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0CE4F68A0>]}
+[0m15:16:47.897007 [info ] [MainThread]: 
+[0m15:16:47.897007 [info ] [MainThread]: Updates available for packages: ['dbt-labs/codegen']                 
+Update your versions in packages.yml, then run dbt deps
+[0m15:16:47.898005 [debug] [MainThread]: Command `cli deps` succeeded at 15:16:47.898005 after 1.99 seconds
+[0m15:16:47.899006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0CC9EE090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0CC9EE060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0CC9EF740>]}
+[0m15:16:47.899006 [debug] [MainThread]: Flushing usage events
+[0m15:16:48.163058 [debug] [MainThread]: An error was encountered while trying to flush usage events
