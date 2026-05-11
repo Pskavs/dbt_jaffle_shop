@@ -2763,3 +2763,933 @@ Update your versions in packages.yml, then run dbt deps
 [0m17:08:47.017945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8EF477980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8EF477560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8EF4779B0>]}
 [0m17:08:47.017945 [debug] [MainThread]: Flushing usage events
 [0m17:08:47.309077 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:21:10.430723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607BD2A6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607E8C9E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607EB119A0>]}
+
+
+============================== 15:21:10.436283 | 56c28bc6-c96d-45ea-944f-2704eb0626b0 ==============================
+[0m15:21:10.436283 [info ] [MainThread]: Running with dbt=1.11.9
+[0m15:21:10.436283 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'log_path': 'c:\\Repos\\jaffle-shop\\logs'}
+[0m15:21:10.537862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '56c28bc6-c96d-45ea-944f-2704eb0626b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607BE0BA10>]}
+[0m15:21:10.613391 [debug] [MainThread]: Set downloads directory='C:\Users\CHRIST~1\AppData\Local\Temp\dbt-downloads-t9lq6696'
+[0m15:21:10.614392 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:21:10.725721 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:21:10.727661 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json
+[0m15:21:10.780780 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/codegen.json 200
+[0m15:21:10.782980 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:21:10.823877 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:21:10.827787 [info ] [MainThread]: Installing dbt-labs/codegen
+[0m15:21:11.391914 [info ] [MainThread]: Installed from version 0.14.0
+[0m15:21:11.392919 [info ] [MainThread]: Updated version available: 0.14.1
+[0m15:21:11.392919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '56c28bc6-c96d-45ea-944f-2704eb0626b0', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607F4B9280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607F4B8DA0>]}
+[0m15:21:11.392919 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:21:12.007860 [info ] [MainThread]: Installed from version 1.3.3
+[0m15:21:12.008941 [info ] [MainThread]: Up to date!
+[0m15:21:12.008941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '56c28bc6-c96d-45ea-944f-2704eb0626b0', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607F5E0F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607F4B8DA0>]}
+[0m15:21:12.008941 [info ] [MainThread]: 
+[0m15:21:12.009938 [info ] [MainThread]: Updates available for packages: ['dbt-labs/codegen']                 
+Update your versions in packages.yml, then run dbt deps
+[0m15:21:12.010956 [debug] [MainThread]: Command `cli deps` succeeded at 15:21:12.010956 after 1.70 seconds
+[0m15:21:12.010956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607BD2A6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607EB7B950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002607C4DE5A0>]}
+[0m15:21:12.010956 [debug] [MainThread]: Flushing usage events
+[0m15:21:12.276715 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:56:31.807808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B962B5DBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B964DC4170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9646E2A50>]}
+
+
+============================== 15:56:31.811317 | 84d5e72f-f594-49ba-94a3-9e1a4fb09e0b ==============================
+[0m15:56:31.811317 [info ] [MainThread]: Running with dbt=1.11.9
+[0m15:56:31.811317 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\logs'}
+[0m15:56:35.518402 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:56:35.518402 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:56:35.519408 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:56:35.690545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B909E79460>]}
+[0m15:56:35.732275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90A1B64B0>]}
+[0m15:56:35.734179 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m15:56:36.276826 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m15:56:36.368528 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m15:56:36.368528 [debug] [MainThread]: previous checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, current checksum: a2a6c3ad70d97238cd4662b1abb61bcb7b07a15f9f2431ec5bf3dbb2eaaa5bac
+[0m15:56:36.368528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9659B9070>]}
+[0m15:56:40.988032 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.snowflake_spend
+[0m15:56:40.994146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90AC700E0>]}
+[0m15:56:41.129220 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Repos\jaffle-shop\target\manifest.json
+[0m15:56:41.156567 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Repos\jaffle-shop\target\semantic_manifest.json
+[0m15:56:41.167116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90AE30500>]}
+[0m15:56:41.168110 [info ] [MainThread]: Found 12 models, 12 data tests, 3 sources, 673 macros
+[0m15:56:41.168614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B962E11550>]}
+[0m15:56:41.169619 [info ] [MainThread]: 
+[0m15:56:41.170618 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:56:41.170618 [info ] [MainThread]: 
+[0m15:56:41.170618 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:56:41.173619 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m15:56:46.008267 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m15:56:46.008267 [debug] [ThreadPool]: On list_ANALYTICS: show terse schemas in database ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+[0m15:56:46.009807 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:56:47.908933 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.899 seconds
+[0m15:56:47.915951 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_dbt_christian'
+[0m15:56:47.936121 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_dbt_christian"
+[0m15:56:47.936121 [debug] [ThreadPool]: On list_ANALYTICS_dbt_christian: show objects in ANALYTICS.dbt_christian
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "connection_name": "list_ANALYTICS_dbt_christian"} */;
+[0m15:56:47.937122 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:56:48.520297 [debug] [ThreadPool]: SQL status: SUCCESS 11 in 0.584 seconds
+[0m15:56:48.529216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B962D36540>]}
+[0m15:56:48.541566 [debug] [Thread-2 (]: Began running node model.dbt_fundamentals_on_demand.customer_orders_legacy
+[0m15:56:48.543566 [debug] [Thread-3 (]: Began running node model.dbt_fundamentals_on_demand.date_spine
+[0m15:56:48.545565 [debug] [Thread-4 (]: Began running node model.dbt_fundamentals_on_demand.fct_customer_orders
+[0m15:56:48.545565 [debug] [Thread-5 (]: Began running node model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers
+[0m15:56:48.543566 [info ] [Thread-2 (]: 1 of 11 START sql view model dbt_christian.customer_orders_legacy .............. [RUN]
+[0m15:56:48.544566 [info ] [Thread-3 (]: 2 of 11 START sql view model dbt_christian.date_spine .......................... [RUN]
+[0m15:56:48.550089 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_fundamentals_on_demand.customer_orders_legacy'
+[0m15:56:48.550089 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.dbt_fundamentals_on_demand.date_spine'
+[0m15:56:48.546566 [info ] [Thread-4 (]: 3 of 11 START sql view model dbt_christian.fct_customer_orders ................. [RUN]
+[0m15:56:48.551102 [debug] [Thread-2 (]: Began compiling node model.dbt_fundamentals_on_demand.customer_orders_legacy
+[0m15:56:48.552102 [debug] [Thread-3 (]: Began compiling node model.dbt_fundamentals_on_demand.date_spine
+[0m15:56:48.548074 [info ] [Thread-5 (]: 4 of 11 START sql view model dbt_christian.stg_jaffle_shop__customers .......... [RUN]
+[0m15:56:48.554101 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_fundamentals_on_demand.fct_customer_orders'
+[0m15:56:48.565584 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.customer_orders_legacy"
+[0m15:56:48.569095 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.date_spine"
+[0m15:56:48.569790 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers'
+[0m15:56:48.569790 [debug] [Thread-4 (]: Began compiling node model.dbt_fundamentals_on_demand.fct_customer_orders
+[0m15:56:48.569790 [debug] [Thread-3 (]: On model.dbt_fundamentals_on_demand.date_spine: select datediff(
+        day,
+        cast('2019-01-01' as date),
+        cast('2020-01-01' as date)
+        )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.date_spine"} */
+[0m15:56:48.570810 [debug] [Thread-5 (]: Began compiling node model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers
+[0m15:56:48.572797 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.fct_customer_orders"
+[0m15:56:48.572797 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:56:48.574798 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers"
+[0m15:56:48.574798 [debug] [Thread-2 (]: Began executing node model.dbt_fundamentals_on_demand.customer_orders_legacy
+[0m15:56:48.594662 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.customer_orders_legacy"
+[0m15:56:48.595603 [debug] [Thread-4 (]: Began executing node model.dbt_fundamentals_on_demand.fct_customer_orders
+[0m15:56:48.624799 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.fct_customer_orders"
+[0m15:56:48.625799 [debug] [Thread-5 (]: Began executing node model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers
+[0m15:56:48.626938 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers"
+[0m15:56:48.628442 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.customer_orders_legacy"
+[0m15:56:48.629459 [debug] [Thread-2 (]: On model.dbt_fundamentals_on_demand.customer_orders_legacy: create or replace   view ANALYTICS.dbt_christian.customer_orders_legacy
+  
+  
+  
+  
+  as (
+    with 
+
+-- Import CTEs
+
+customers as (
+
+  select * from raw.jaffle_shop.customers
+
+),
+
+orders as (
+
+  select * from raw.jaffle_shop.orders
+
+),
+
+payments as (
+
+  select * from raw.stripe.payment
+
+),
+
+-- Logical CTEs
+-- Final CTE
+-- Simple Select Statment
+
+
+paid_orders as (
+    select orders.id as order_id,
+        orders.user_id as customer_id,
+        orders.order_date as order_placed_at,
+        orders.status as order_status,
+        p.total_amount_paid,
+        p.payment_finalized_date,
+        c.first_name as customer_first_name,
+        c.last_name as customer_last_name
+    from orders
+    left join (
+        select 
+            orderid as order_id,
+            max(created) as payment_finalized_date,
+            sum(amount) / 100.0 as total_amount_paid
+        from payments
+        where status <> 'fail'
+        group by 1
+    ) p on orders.id = p.order_id
+    left join customers as c on orders.user_id = c.id ),
+
+customer_orders as (
+    select 
+        c.id as customer_id
+        , min(order_date) as first_order_date
+        , max(order_date) as most_recent_order_date
+        , count(orders.id) as number_of_orders
+    from customers as c 
+    left join orders on orders.user_id = c.id 
+    group by 1
+)
+
+select
+    p.*,
+    row_number() over (order by p.order_id) as transaction_seq,
+    row_number() over (partition by customer_id order by p.order_id) as customer_sales_seq,
+    case when c.first_order_date = p.order_placed_at
+    then 'new'
+    else 'return' end as nvsr,
+    x.clv_bad as customer_lifetime_value,
+    c.first_order_date as fdos
+from paid_orders p
+left join customer_orders as c using (customer_id)
+left outer join 
+(
+    select
+        p.order_id,
+        sum(t2.total_amount_paid) as clv_bad
+    from paid_orders p
+    left join paid_orders t2 on p.customer_id = t2.customer_id and p.order_id >= t2.order_id
+    group by 1
+    order by p.order_id
+) x on x.order_id = p.order_id
+order by order_id
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.customer_orders_legacy"} */;
+[0m15:56:48.629459 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:56:48.629459 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers"
+[0m15:56:48.629459 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.fct_customer_orders"
+[0m15:56:48.629459 [debug] [Thread-5 (]: On model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers: create or replace   view ANALYTICS.dbt_christian.stg_jaffle_shop__customers
+  
+  
+  
+  
+  as (
+    select 
+    id as customer_id,
+    first_name,
+    last_name
+from raw.jaffle_shop.customers
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers"} */;
+[0m15:56:48.657311 [debug] [Thread-4 (]: On model.dbt_fundamentals_on_demand.fct_customer_orders: create or replace   view ANALYTICS.dbt_christian.fct_customer_orders
+  
+  
+  
+  
+  as (
+    WITH paid_orders as (select Orders.ID as order_id,
+        Orders.USER_ID    as customer_id,
+        Orders.ORDER_DATE AS order_placed_at,
+            Orders.STATUS AS order_status,
+        p.total_amount_paid,
+        p.payment_finalized_date,
+        C.FIRST_NAME    as customer_first_name,
+            C.LAST_NAME as customer_last_name
+    FROM raw.jaffle_shop.orders as Orders
+    left join (select ORDERID as order_id, max(CREATED) as payment_finalized_date, sum(AMOUNT) / 100.0 as total_amount_paid
+from raw.stripe.payment raw.stripe.payment
+where STATUS <> 'fail'
+group by 1) p ON orders.ID = p.order_id
+left join raw.jaffle_shop.customers C on orders.USER_ID = C.ID ),
+
+customer_orders 
+    as (select C.ID as customer_id
+        , min(ORDER_DATE) as first_order_date
+        , max(ORDER_DATE) as most_recent_order_date
+        , count(ORDERS.ID) AS number_of_orders
+    from raw.jaffle_shop.customers C 
+    left join  raw.jaffle_shop.orders as Orders
+    on orders.USER_ID = C.ID 
+    group by 1)
+
+select
+    p.*,
+    ROW_NUMBER() OVER (ORDER BY p.order_id) as transaction_seq,
+    ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY p.order_id) as customer_sales_seq,
+    CASE WHEN c.first_order_date = p.order_placed_at
+    THEN 'new'
+    ELSE 'return' END as nvsr,
+    x.clv_bad as customer_lifetime_value,
+    c.first_order_date as fdos
+    FROM paid_orders p
+    left join customer_orders as c USING (customer_id)
+    LEFT OUTER JOIN 
+    (
+            select
+            p.order_id,
+            sum(t2.total_amount_paid) as clv_bad
+        from paid_orders p
+        left join paid_orders t2 on p.customer_id = t2.customer_id and p.order_id >= t2.order_id
+        group by 1
+        order by p.order_id
+    ) x on x.order_id = p.order_id
+    ORDER BY order_id
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.fct_customer_orders"} */;
+[0m15:56:48.658523 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m15:56:48.658523 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:56:49.516327 [debug] [Thread-4 (]: Snowflake adapter: Snowflake query id: 01c44e60-0208-cefc-0026-efd3002234fa
+[0m15:56:49.516327 [debug] [Thread-4 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 17 at position 27 unexpected '.'.
+syntax error line 19 at position 12 unexpected 'p'.
+syntax error line 20 at position 64 unexpected ','.
+[0m15:56:49.528656 [debug] [Thread-4 (]: Database Error in model fct_customer_orders (models\demo\legacy\marts\fct_customer_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 17 at position 27 unexpected '.'.
+  syntax error line 19 at position 12 unexpected 'p'.
+  syntax error line 20 at position 64 unexpected ','.
+  compiled code at target\run\dbt_fundamentals_on_demand\models\demo\legacy\marts\fct_customer_orders.sql
+[0m15:56:49.529662 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9652E89B0>]}
+[0m15:56:49.529662 [error] [Thread-4 (]: 3 of 11 ERROR creating sql view model dbt_christian.fct_customer_orders ........ [[31mERROR[0m in 0.97s]
+[0m15:56:49.529662 [debug] [Thread-4 (]: Finished running node model.dbt_fundamentals_on_demand.fct_customer_orders
+[0m15:56:49.529662 [debug] [Thread-4 (]: Began running node model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders
+[0m15:56:49.529662 [debug] [Thread-8 (]: Marking all children of 'model.dbt_fundamentals_on_demand.fct_customer_orders' to be skipped because of status 'error'.  Reason: Database Error in model fct_customer_orders (models\demo\legacy\marts\fct_customer_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 17 at position 27 unexpected '.'.
+  syntax error line 19 at position 12 unexpected 'p'.
+  syntax error line 20 at position 64 unexpected ','.
+  compiled code at target\run\dbt_fundamentals_on_demand\models\demo\legacy\marts\fct_customer_orders.sql.
+[0m15:56:49.529662 [info ] [Thread-4 (]: 5 of 11 START sql view model dbt_christian.stg_jaffle_shop__orders ............. [RUN]
+[0m15:56:49.529662 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.fct_customer_orders, now model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders)
+[0m15:56:49.529662 [debug] [Thread-4 (]: Began compiling node model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders
+[0m15:56:49.529662 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders"
+[0m15:56:49.529662 [debug] [Thread-4 (]: Began executing node model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders
+[0m15:56:49.529662 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders"
+[0m15:56:49.539207 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders"
+[0m15:56:49.539207 [debug] [Thread-4 (]: On model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders: create or replace   view ANALYTICS.dbt_christian.stg_jaffle_shop__orders
+  
+  
+  
+  
+  as (
+    select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status as order_status
+from raw.jaffle_shop.orders
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders"} */;
+[0m15:56:49.679508 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.058 seconds
+[0m15:56:49.703368 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9671D8830>]}
+[0m15:56:49.704368 [info ] [Thread-2 (]: 1 of 11 OK created sql view model dbt_christian.customer_orders_legacy ......... [[32mSUCCESS 1[0m in 1.16s]
+[0m15:56:49.704368 [debug] [Thread-2 (]: Finished running node model.dbt_fundamentals_on_demand.customer_orders_legacy
+[0m15:56:49.705357 [debug] [Thread-2 (]: Began running node model.dbt_fundamentals_on_demand.stg_stripe__payment
+[0m15:56:49.705357 [info ] [Thread-2 (]: 6 of 11 START sql view model dbt_christian.stg_stripe__payment ................. [RUN]
+[0m15:56:49.705357 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.customer_orders_legacy, now model.dbt_fundamentals_on_demand.stg_stripe__payment)
+[0m15:56:49.706375 [debug] [Thread-2 (]: Began compiling node model.dbt_fundamentals_on_demand.stg_stripe__payment
+[0m15:56:49.707294 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.stg_stripe__payment"
+[0m15:56:49.708947 [debug] [Thread-2 (]: Began executing node model.dbt_fundamentals_on_demand.stg_stripe__payment
+[0m15:56:49.710020 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.stg_stripe__payment"
+[0m15:56:49.711025 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.stg_stripe__payment"
+[0m15:56:49.711025 [debug] [Thread-2 (]: On model.dbt_fundamentals_on_demand.stg_stripe__payment: create or replace   view ANALYTICS.dbt_christian.stg_stripe__payment
+  
+  
+  
+  
+  as (
+    WITH
+SOURCE AS(
+    SELECT * FROM raw.stripe.payment
+),
+RENAMED as(
+    SELECT
+        id as payment_id,
+        orderid as order_id,
+        paymentmethod as payment_method,
+        status as payment_status,
+        ROUND(amount / 100, 2)
+ as payment_amount, 
+        created as payment_created,
+        _batched_at
+    FROM SOURCE
+)
+SELECT * FROM renamed
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.stg_stripe__payment"} */;
+[0m15:56:49.943470 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.404 seconds
+[0m15:56:49.948166 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90C0DA810>]}
+[0m15:56:49.949182 [info ] [Thread-4 (]: 5 of 11 OK created sql view model dbt_christian.stg_jaffle_shop__orders ........ [[32mSUCCESS 1[0m in 0.42s]
+[0m15:56:49.951178 [debug] [Thread-4 (]: Finished running node model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders
+[0m15:56:49.951178 [debug] [Thread-4 (]: Began running node model.dbt_fundamentals_on_demand.union_tables
+[0m15:56:49.952707 [info ] [Thread-4 (]: 7 of 11 START sql view model dbt_christian.union_tables ........................ [RUN]
+[0m15:56:49.953723 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.stg_jaffle_shop__orders, now model.dbt_fundamentals_on_demand.union_tables)
+[0m15:56:49.954723 [debug] [Thread-4 (]: Began compiling node model.dbt_fundamentals_on_demand.union_tables
+[0m15:56:49.978238 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.union_tables"
+[0m15:56:49.978238 [debug] [Thread-4 (]: On model.dbt_fundamentals_on_demand.union_tables: select distinct
+            table_schema as "table_schema",
+            table_name as "table_name",
+            
+            case table_type
+                when 'BASE TABLE' then 'table'
+                when 'EXTERNAL TABLE' then 'external'
+                when 'MATERIALIZED VIEW' then 'materializedview'
+                else lower(table_type)
+            end as "table_type"
+
+        from raw.information_schema.tables
+        where table_schema ilike 'dbt_learn_jinja'
+        and table_name ilike 'orders__%'
+        and table_name not ilike ''
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.union_tables"} */
+[0m15:56:50.046401 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.388 seconds
+[0m15:56:50.048967 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90C2640B0>]}
+[0m15:56:50.050057 [info ] [Thread-5 (]: 4 of 11 OK created sql view model dbt_christian.stg_jaffle_shop__customers ..... [[32mSUCCESS 1[0m in 1.48s]
+[0m15:56:50.051050 [debug] [Thread-5 (]: Finished running node model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers
+[0m15:56:50.051050 [debug] [Thread-5 (]: Began running node model.dbt_fundamentals_on_demand.customers_daily_summary
+[0m15:56:50.051050 [info ] [Thread-5 (]: 8 of 11 START sql view model dbt_christian.customers_daily_summary ............. [RUN]
+[0m15:56:50.051050 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.stg_jaffle_shop__customers, now model.dbt_fundamentals_on_demand.customers_daily_summary)
+[0m15:56:50.052060 [debug] [Thread-5 (]: Began compiling node model.dbt_fundamentals_on_demand.customers_daily_summary
+[0m15:56:50.054069 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.customers_daily_summary"
+[0m15:56:50.054069 [debug] [Thread-5 (]: Began executing node model.dbt_fundamentals_on_demand.customers_daily_summary
+[0m15:56:50.055962 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.customers_daily_summary"
+[0m15:56:50.056982 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.customers_daily_summary"
+[0m15:56:50.056982 [debug] [Thread-5 (]: On model.dbt_fundamentals_on_demand.customers_daily_summary: create or replace   view ANALYTICS.dbt_christian.customers_daily_summary
+  
+  
+  
+  
+  as (
+    SELECT
+    customer_id,
+    order_date,
+    md5(cast(coalesce(cast(customer_id as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(order_date as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as primary_key,
+    count(*) as c
+FROM ANALYTICS.dbt_christian.stg_jaffle_shop__orders
+GROUP BY 1,2
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.customers_daily_summary"} */;
+[0m15:56:50.104891 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.532 seconds
+[0m15:56:50.106748 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.date_spine"
+[0m15:56:50.106748 [debug] [Thread-3 (]: Began executing node model.dbt_fundamentals_on_demand.date_spine
+[0m15:56:50.109273 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.date_spine"
+[0m15:56:50.110272 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.date_spine"
+[0m15:56:50.111272 [debug] [Thread-3 (]: On model.dbt_fundamentals_on_demand.date_spine: create or replace   view ANALYTICS.dbt_christian.date_spine
+  
+  
+  
+  
+  as (
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 365
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+    dateadd(
+        day,
+        row_number() over (order by generated_number) - 1,
+        cast('2019-01-01' as date)
+        )
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast('2020-01-01' as date)
+
+)
+
+select * from filtered
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.date_spine"} */;
+[0m15:56:50.164223 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.452 seconds
+[0m15:56:50.165220 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90C26FE30>]}
+[0m15:56:50.166219 [info ] [Thread-2 (]: 6 of 11 OK created sql view model dbt_christian.stg_stripe__payment ............ [[32mSUCCESS 1[0m in 0.46s]
+[0m15:56:50.167237 [debug] [Thread-2 (]: Finished running node model.dbt_fundamentals_on_demand.stg_stripe__payment
+[0m15:56:50.168217 [debug] [Thread-2 (]: Began running node model.dbt_fundamentals_on_demand.fct_orders
+[0m15:56:50.168217 [info ] [Thread-2 (]: 9 of 11 START sql table model dbt_christian.fct_orders ......................... [RUN]
+[0m15:56:50.168722 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.stg_stripe__payment, now model.dbt_fundamentals_on_demand.fct_orders)
+[0m15:56:50.168722 [debug] [Thread-2 (]: Began compiling node model.dbt_fundamentals_on_demand.fct_orders
+[0m15:56:50.170733 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.fct_orders"
+[0m15:56:50.171734 [debug] [Thread-2 (]: Began executing node model.dbt_fundamentals_on_demand.fct_orders
+[0m15:56:50.184533 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.fct_orders"
+[0m15:56:50.187456 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.fct_orders"
+[0m15:56:50.188455 [debug] [Thread-2 (]: On model.dbt_fundamentals_on_demand.fct_orders: create or replace transient table ANALYTICS.dbt_christian.fct_orders
+    
+    
+    
+    as (with orders as  (
+    select * from ANALYTICS.dbt_christian.stg_jaffle_shop__orders
+),
+
+payments as (
+    select * from ANALYTICS.dbt_christian.stg_stripe__payment
+),
+
+order_payments as (
+    select
+        order_id,
+        sum (case when payment_status = 'success' then payment_amount end) as amount
+
+    from payments
+    group by 1
+),
+
+ final as (
+
+    select
+        orders.order_id,
+        orders.customer_id,
+        orders.order_date,
+        coalesce (order_payments.amount, 0) as amount
+
+    from orders
+    left join order_payments using (order_id)
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.fct_orders"} */;
+[0m15:56:50.409685 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.299 seconds
+[0m15:56:50.414683 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90C23F410>]}
+[0m15:56:50.415683 [info ] [Thread-3 (]: 2 of 11 OK created sql view model dbt_christian.date_spine ..................... [[32mSUCCESS 1[0m in 1.86s]
+[0m15:56:50.416691 [debug] [Thread-3 (]: Finished running node model.dbt_fundamentals_on_demand.date_spine
+[0m15:56:50.418203 [debug] [Thread-3 (]: Began running node model.dbt_fundamentals_on_demand.int_orders__pivoted
+[0m15:56:50.419219 [info ] [Thread-3 (]: 10 of 11 START sql view model dbt_christian.int_orders__pivoted ................ [RUN]
+[0m15:56:50.419219 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.date_spine, now model.dbt_fundamentals_on_demand.int_orders__pivoted)
+[0m15:56:50.420217 [debug] [Thread-3 (]: Began compiling node model.dbt_fundamentals_on_demand.int_orders__pivoted
+[0m15:56:50.426596 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.int_orders__pivoted"
+[0m15:56:50.429317 [debug] [Thread-3 (]: Began executing node model.dbt_fundamentals_on_demand.int_orders__pivoted
+[0m15:56:50.434475 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.int_orders__pivoted"
+[0m15:56:50.434475 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.int_orders__pivoted"
+[0m15:56:50.434475 [debug] [Thread-3 (]: On model.dbt_fundamentals_on_demand.int_orders__pivoted: create or replace   view ANALYTICS.dbt_christian.int_orders__pivoted
+  
+  
+  
+  
+  as (
+    with payments as(
+    
+    SELECT *
+    FROM ANALYTICS.dbt_christian.stg_stripe__payment
+    WHERE PAYMENT_STATUS = 'success'
+), pivoted as
+(
+    select 
+    order_id,
+    sum (case when payment_method = 'bank_transfer' then payment_amount else 0 end) as bank_transfer_amount
+    from payments
+    group by 1
+)
+select * from pivoted
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.int_orders__pivoted"} */;
+[0m15:56:50.439118 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.382 seconds
+[0m15:56:50.441129 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90C3019D0>]}
+[0m15:56:50.442125 [info ] [Thread-5 (]: 8 of 11 OK created sql view model dbt_christian.customers_daily_summary ........ [[32mSUCCESS 1[0m in 0.39s]
+[0m15:56:50.442125 [debug] [Thread-5 (]: Finished running node model.dbt_fundamentals_on_demand.customers_daily_summary
+[0m15:56:50.732043 [debug] [Thread-4 (]: SQL status: SUCCESS 2 in 0.753 seconds
+[0m15:56:50.736040 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.union_tables"
+[0m15:56:50.739341 [debug] [Thread-4 (]: Began executing node model.dbt_fundamentals_on_demand.union_tables
+[0m15:56:50.745391 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.union_tables"
+[0m15:56:50.747339 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.union_tables"
+[0m15:56:50.748395 [debug] [Thread-4 (]: On model.dbt_fundamentals_on_demand.union_tables: create or replace   view ANALYTICS.dbt_christian.union_tables
+  
+  
+  
+  
+  as (
+    
+    
+    
+        
+        select * from raw.DBT_LEARN_JINJA.ORDERS__SHOPIFY
+    
+        
+            union all
+        
+        select * from raw.DBT_LEARN_JINJA.ORDERS__AMAZON
+    
+    
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.union_tables"} */;
+[0m15:56:50.883149 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.446 seconds
+[0m15:56:50.888220 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90A8CF4D0>]}
+[0m15:56:50.888769 [info ] [Thread-3 (]: 10 of 11 OK created sql view model dbt_christian.int_orders__pivoted ........... [[32mSUCCESS 1[0m in 0.47s]
+[0m15:56:50.891011 [debug] [Thread-3 (]: Finished running node model.dbt_fundamentals_on_demand.int_orders__pivoted
+[0m15:56:51.164141 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.415 seconds
+[0m15:56:51.168655 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90AE69250>]}
+[0m15:56:51.169666 [info ] [Thread-4 (]: 7 of 11 OK created sql view model dbt_christian.union_tables ................... [[32mSUCCESS 1[0m in 1.21s]
+[0m15:56:51.171660 [debug] [Thread-4 (]: Finished running node model.dbt_fundamentals_on_demand.union_tables
+[0m15:56:52.279749 [debug] [Thread-2 (]: SQL status: SUCCESS 99 in 2.092 seconds
+[0m15:56:52.281856 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90AC70050>]}
+[0m15:56:52.281856 [info ] [Thread-2 (]: 9 of 11 OK created sql table model dbt_christian.fct_orders .................... [[32mSUCCESS 99[0m in 2.11s]
+[0m15:56:52.281856 [debug] [Thread-2 (]: Finished running node model.dbt_fundamentals_on_demand.fct_orders
+[0m15:56:52.282852 [debug] [Thread-5 (]: Began running node model.dbt_fundamentals_on_demand.dim_customers
+[0m15:56:52.282852 [info ] [Thread-5 (]: 11 of 11 START sql table model dbt_christian.dim_customers ..................... [RUN]
+[0m15:56:52.283854 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.dbt_fundamentals_on_demand.customers_daily_summary, now model.dbt_fundamentals_on_demand.dim_customers)
+[0m15:56:52.284852 [debug] [Thread-5 (]: Began compiling node model.dbt_fundamentals_on_demand.dim_customers
+[0m15:56:52.287198 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.dim_customers"
+[0m15:56:52.287198 [debug] [Thread-5 (]: Began executing node model.dbt_fundamentals_on_demand.dim_customers
+[0m15:56:52.288706 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.dim_customers"
+[0m15:56:52.290724 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.dim_customers"
+[0m15:56:52.290724 [debug] [Thread-5 (]: On model.dbt_fundamentals_on_demand.dim_customers: create or replace transient table ANALYTICS.dbt_christian.dim_customers
+    
+    
+    
+    as (with customers as (
+
+    select * from ANALYTICS.dbt_christian.stg_jaffle_shop__customers
+
+),
+
+orders as (
+
+    select * from ANALYTICS.dbt_christian.fct_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders,
+        sum(amount) as lifetime_value
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders,
+        customer_orders.lifetime_value
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.dim_customers"} */;
+[0m15:56:53.732058 [debug] [Thread-5 (]: SQL status: SUCCESS 100 in 1.441 seconds
+[0m15:56:53.737126 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84d5e72f-f594-49ba-94a3-9e1a4fb09e0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90C2F38C0>]}
+[0m15:56:53.738068 [info ] [Thread-5 (]: 11 of 11 OK created sql table model dbt_christian.dim_customers ................ [[32mSUCCESS 100[0m in 1.45s]
+[0m15:56:53.739589 [debug] [Thread-5 (]: Finished running node model.dbt_fundamentals_on_demand.dim_customers
+[0m15:56:53.742802 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:56:53.743800 [debug] [MainThread]: Connection 'list_ANALYTICS' was left open.
+[0m15:56:53.743800 [debug] [MainThread]: On list_ANALYTICS: Close
+[0m15:56:54.143325 [debug] [MainThread]: Connection 'list_ANALYTICS_dbt_christian' was left open.
+[0m15:56:54.144325 [debug] [MainThread]: On list_ANALYTICS_dbt_christian: Close
+[0m15:56:54.285138 [debug] [MainThread]: Connection 'model.dbt_fundamentals_on_demand.fct_orders' was left open.
+[0m15:56:54.286138 [debug] [MainThread]: On model.dbt_fundamentals_on_demand.fct_orders: Close
+[0m15:56:54.423275 [debug] [MainThread]: Connection 'model.dbt_fundamentals_on_demand.int_orders__pivoted' was left open.
+[0m15:56:54.425193 [debug] [MainThread]: On model.dbt_fundamentals_on_demand.int_orders__pivoted: Close
+[0m15:56:54.576960 [debug] [MainThread]: Connection 'model.dbt_fundamentals_on_demand.union_tables' was left open.
+[0m15:56:54.576960 [debug] [MainThread]: On model.dbt_fundamentals_on_demand.union_tables: Close
+[0m15:56:54.733801 [debug] [MainThread]: Connection 'model.dbt_fundamentals_on_demand.dim_customers' was left open.
+[0m15:56:54.734801 [debug] [MainThread]: On model.dbt_fundamentals_on_demand.dim_customers: Close
+[0m15:56:54.893247 [info ] [MainThread]: 
+[0m15:56:54.895246 [info ] [MainThread]: Finished running 2 table models, 9 view models in 0 hours 0 minutes and 13.72 seconds (13.72s).
+[0m15:56:54.898756 [debug] [MainThread]: Command end result
+[0m15:56:54.938346 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Repos\jaffle-shop\target\manifest.json
+[0m15:56:54.942131 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Repos\jaffle-shop\target\semantic_manifest.json
+[0m15:56:54.946277 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Repos\jaffle-shop\target\run_results.json
+[0m15:56:54.946277 [info ] [MainThread]: 
+[0m15:56:54.946277 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:56:54.947277 [info ] [MainThread]: 
+[0m15:56:54.947277 [error] [MainThread]: [31mFailure in model fct_customer_orders (models\demo\legacy\marts\fct_customer_orders.sql)[0m
+[0m15:56:54.947277 [error] [MainThread]:   Database Error in model fct_customer_orders (models\demo\legacy\marts\fct_customer_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 17 at position 27 unexpected '.'.
+  syntax error line 19 at position 12 unexpected 'p'.
+  syntax error line 20 at position 64 unexpected ','.
+  compiled code at target\run\dbt_fundamentals_on_demand\models\demo\legacy\marts\fct_customer_orders.sql
+[0m15:56:54.948276 [info ] [MainThread]: 
+[0m15:56:54.948276 [info ] [MainThread]:   compiled code at target\compiled\dbt_fundamentals_on_demand\models\demo\legacy\marts\fct_customer_orders.sql
+[0m15:56:54.948276 [info ] [MainThread]: 
+[0m15:56:54.948276 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=11
+[0m15:56:54.949338 [debug] [MainThread]: Command `dbt run` failed at 15:56:54.949338 after 23.31 seconds
+[0m15:56:54.949338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B965EA0AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9652BA9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9671B51C0>]}
+[0m15:56:54.949338 [debug] [MainThread]: Flushing usage events
+[0m15:56:55.320139 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:00:05.741731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4B98F49E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4BC337FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4BC337C20>]}
+
+
+============================== 16:00:05.744732 | 4bcd0e7e-bd36-4e3b-9773-068389e60a20 ==============================
+[0m16:00:05.744732 [info ] [MainThread]: Running with dbt=1.11.9
+[0m16:00:05.745744 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ChristianPaskevicius\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run --select fct_customer_orders.sql', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Repos\\jaffle-shop\\logs'}
+[0m16:00:06.264702 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m16:00:06.265696 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m16:00:06.265696 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m16:00:06.390705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4bcd0e7e-bd36-4e3b-9773-068389e60a20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4BC3733B0>]}
+[0m16:00:06.429775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4bcd0e7e-bd36-4e3b-9773-068389e60a20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4DCA9FB90>]}
+[0m16:00:06.431767 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m16:00:06.644384 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m16:00:06.769002 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:00:06.770003 [debug] [MainThread]: Partial parsing: updated file: dbt_fundamentals_on_demand://models\demo\legacy\marts\fct_customer_orders.sql
+[0m16:00:06.987587 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.snowflake_spend
+[0m16:00:06.995122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4bcd0e7e-bd36-4e3b-9773-068389e60a20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4DFB84D10>]}
+[0m16:00:07.054976 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Repos\jaffle-shop\target\manifest.json
+[0m16:00:07.056977 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Repos\jaffle-shop\target\semantic_manifest.json
+[0m16:00:07.066487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4bcd0e7e-bd36-4e3b-9773-068389e60a20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4DFB86240>]}
+[0m16:00:07.066487 [info ] [MainThread]: Found 12 models, 12 data tests, 3 sources, 673 macros
+[0m16:00:07.066487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4bcd0e7e-bd36-4e3b-9773-068389e60a20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4DFBD6240>]}
+[0m16:00:07.069001 [info ] [MainThread]: 
+[0m16:00:07.069001 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:00:07.069001 [info ] [MainThread]: 
+[0m16:00:07.070001 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:00:07.071006 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS'
+[0m16:00:07.110274 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS"
+[0m16:00:07.111274 [debug] [ThreadPool]: On list_ANALYTICS: show terse schemas in database ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "connection_name": "list_ANALYTICS"} */
+[0m16:00:07.111274 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:00:08.222152 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.111 seconds
+[0m16:00:08.226595 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ANALYTICS_dbt_christian'
+[0m16:00:08.235494 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_dbt_christian"
+[0m16:00:08.235494 [debug] [ThreadPool]: On list_ANALYTICS_dbt_christian: show objects in ANALYTICS.dbt_christian
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "connection_name": "list_ANALYTICS_dbt_christian"} */;
+[0m16:00:08.235494 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:00:08.740945 [debug] [ThreadPool]: SQL status: SUCCESS 11 in 0.505 seconds
+[0m16:00:08.743472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4bcd0e7e-bd36-4e3b-9773-068389e60a20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4DF4674A0>]}
+[0m16:00:08.747460 [debug] [Thread-2 (]: Began running node model.dbt_fundamentals_on_demand.fct_customer_orders
+[0m16:00:08.748454 [info ] [Thread-2 (]: 1 of 1 START sql view model dbt_christian.fct_customer_orders .................. [RUN]
+[0m16:00:08.748454 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.dbt_fundamentals_on_demand.fct_customer_orders'
+[0m16:00:08.748454 [debug] [Thread-2 (]: Began compiling node model.dbt_fundamentals_on_demand.fct_customer_orders
+[0m16:00:08.754644 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_fundamentals_on_demand.fct_customer_orders"
+[0m16:00:08.755645 [debug] [Thread-2 (]: Began executing node model.dbt_fundamentals_on_demand.fct_customer_orders
+[0m16:00:08.774314 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_fundamentals_on_demand.fct_customer_orders"
+[0m16:00:08.777315 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_fundamentals_on_demand.fct_customer_orders"
+[0m16:00:08.777315 [debug] [Thread-2 (]: On model.dbt_fundamentals_on_demand.fct_customer_orders: create or replace   view ANALYTICS.dbt_christian.fct_customer_orders
+  
+  
+  
+  
+  as (
+    with 
+
+-- Import CTEs
+
+customers as (
+
+  select * from raw.jaffle_shop.customers
+
+),
+
+orders as (
+
+  select * from raw.jaffle_shop.orders
+
+),
+
+payments as (
+
+  select * from raw.stripe.payment
+
+),
+
+-- Logical CTEs
+-- Final CTE
+-- Simple Select Statment
+
+
+paid_orders as (
+    select orders.id as order_id,
+        orders.user_id as customer_id,
+        orders.order_date as order_placed_at,
+        orders.status as order_status,
+        p.total_amount_paid,
+        p.payment_finalized_date,
+        c.first_name as customer_first_name,
+        c.last_name as customer_last_name
+    from orders
+    left join (
+        select 
+            orderid as order_id,
+            max(created) as payment_finalized_date,
+            sum(amount) / 100.0 as total_amount_paid
+        from payments
+        where status <> 'fail'
+        group by 1
+    ) p on orders.id = p.order_id
+    left join customers as c on orders.user_id = c.id ),
+
+customer_orders as (
+    select 
+        c.id as customer_id
+        , min(order_date) as first_order_date
+        , max(order_date) as most_recent_order_date
+        , count(orders.id) as number_of_orders
+    from customers as c 
+    left join orders on orders.user_id = c.id 
+    group by 1
+)
+
+select
+    p.*,
+    row_number() over (order by p.order_id) as transaction_seq,
+    row_number() over (partition by customer_id order by p.order_id) as customer_sales_seq,
+    case when c.first_order_date = p.order_placed_at
+    then 'new'
+    else 'return' end as nvsr,
+    x.clv_bad as customer_lifetime_value,
+    c.first_order_date as fdos
+from paid_orders p
+left join customer_orders as c using (customer_id)
+left outer join 
+(
+    select
+        p.order_id,
+        sum(t2.total_amount_paid) as clv_bad
+    from paid_orders p
+    left join paid_orders t2 on p.customer_id = t2.customer_id and p.order_id >= t2.order_id
+    group by 1
+    order by p.order_id
+) x on x.order_id = p.order_id
+order by order_id
+  )
+/* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "training", "target_name": "dev", "node_id": "model.dbt_fundamentals_on_demand.fct_customer_orders"} */;
+[0m16:00:08.777315 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:00:10.326668 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.548 seconds
+[0m16:00:10.341716 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4bcd0e7e-bd36-4e3b-9773-068389e60a20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4BC2D7D40>]}
+[0m16:00:10.341716 [info ] [Thread-2 (]: 1 of 1 OK created sql view model dbt_christian.fct_customer_orders ............. [[32mSUCCESS 1[0m in 1.59s]
+[0m16:00:10.342702 [debug] [Thread-2 (]: Finished running node model.dbt_fundamentals_on_demand.fct_customer_orders
+[0m16:00:10.343699 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:00:10.343699 [debug] [MainThread]: Connection 'list_ANALYTICS' was left open.
+[0m16:00:10.343699 [debug] [MainThread]: On list_ANALYTICS: Close
+[0m16:00:10.493340 [debug] [MainThread]: Connection 'list_ANALYTICS_dbt_christian' was left open.
+[0m16:00:10.494339 [debug] [MainThread]: On list_ANALYTICS_dbt_christian: Close
+[0m16:00:10.741527 [debug] [MainThread]: Connection 'model.dbt_fundamentals_on_demand.fct_customer_orders' was left open.
+[0m16:00:10.741527 [debug] [MainThread]: On model.dbt_fundamentals_on_demand.fct_customer_orders: Close
+[0m16:00:10.910262 [info ] [MainThread]: 
+[0m16:00:10.910262 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.84 seconds (3.84s).
+[0m16:00:10.910262 [debug] [MainThread]: Command end result
+[0m16:00:10.929331 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Repos\jaffle-shop\target\manifest.json
+[0m16:00:10.931431 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Repos\jaffle-shop\target\semantic_manifest.json
+[0m16:00:10.935581 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Repos\jaffle-shop\target\run_results.json
+[0m16:00:10.935581 [info ] [MainThread]: 
+[0m16:00:10.935581 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:00:10.936579 [info ] [MainThread]: 
+[0m16:00:10.936579 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m16:00:10.936579 [debug] [MainThread]: Command `dbt run` succeeded at 16:00:10.936579 after 5.30 seconds
+[0m16:00:10.936579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4BAF85B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4BA735880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4BAFFD0D0>]}
+[0m16:00:10.938084 [debug] [MainThread]: Flushing usage events
+[0m16:00:11.220104 [debug] [MainThread]: An error was encountered while trying to flush usage events
