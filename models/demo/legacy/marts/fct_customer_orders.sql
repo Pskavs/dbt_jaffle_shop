@@ -4,19 +4,19 @@ with
 
 customers as (
 
-  select * from {{ ref('stg_jaffle_shop__customers') }}
+  select * from {{ ref('stg_customers') }}
 
 ),
 
 orders as (
 
-  select * from {{ ref('stg_jaffle_shop__orders') }}
+  select * from {{ ref('stg_orders') }}
 
 ),
 
 payments as (
 
-  select * from {{ ref('stg_stripe__payment') }}
+  select * from {{ ref('stg_payments') }}
 
 ),
 
