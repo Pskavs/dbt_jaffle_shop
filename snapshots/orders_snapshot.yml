@@ -1,0 +1,15 @@
+snapshots:
+  - name: orders_snapshot
+    relation: source('jaffle_shop', 'orders')
+    description: A snapshot of the orders table
+    config:
+      database: raw
+      schema: snapshots
+      alias: orders_snapshot
+      strategy: check
+      unique_key: id
+      check_cols:
+        - status
+        - order_date
+        - user_id
+      hard_deletes: ignore
