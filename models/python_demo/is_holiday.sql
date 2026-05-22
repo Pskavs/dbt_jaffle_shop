@@ -1,0 +1,1 @@
+select * from {{ ref('is_holiday_2024') }} where is_holiday
