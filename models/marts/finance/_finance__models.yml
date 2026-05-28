@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: fct_orders
+    latest_version: 1
+    config:
+      contract:
+        enforced: true
+
+    columns:
+      - name: order_id
+        data_type: integer
+        constraints:
+          - type: not_null
+          - type: unique
+
+      - name: customer_id
+        data_type: integer
+        constraints:
+          - type: not_null
+
+      - name: order_date
+        data_type: date
+        constraints:
+          - type: not_null
+
+      - name: amount
+        data_type: decimal(10,2)
+        constraints:
+          - type: not_null
+    versions:
+      - v: 1
+        description: "Initial version of the fct_orders model"
+      - v: 2
+        description: "Changed data type to text"
+        columns:
+          - name: amount
+            data_type: text
+            constraints:
+              - type: not_null
+          - include: all
+     
