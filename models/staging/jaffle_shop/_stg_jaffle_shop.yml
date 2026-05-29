@@ -17,6 +17,10 @@ models:
         description: The last name of the customer
         data_tests:
           - not_null
+    config:
+       group: product
+       access: public
+       
 
   - name: stg_jaffle_shop__orders
     description: 1 order per row
@@ -49,3 +53,6 @@ models:
       - name: order_date
         data_tests:
           - not_null
+    config:
+      group: product
+      access: public

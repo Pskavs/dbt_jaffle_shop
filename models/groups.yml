@@ -1,0 +1,9 @@
+groups:
+    - name: finance
+      description: "Group for finance department"
+      owner:
+        name: Christian Paskevicius
+    - name: product
+      description: "Group for product department"
+      owner:
+        name: Christian Paskevicius
