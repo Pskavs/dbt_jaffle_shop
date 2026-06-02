@@ -43,7 +43,7 @@ models:
     +enabled: false
 
   dbt_fundamentals_on_demand:
-   
+    +required_tests: {"unique.*|not_null.*": 2}
     staging:
       +materialized: view
 
