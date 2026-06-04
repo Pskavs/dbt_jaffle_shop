@@ -28,6 +28,9 @@ models:
         data_type: decimal(10,2)
         constraints:
           - type: not_null
+        data_tests:
+          - greater_than_five
+          - assert_amount_average_greater_than_one
     versions:
       - v: 1
         description: "Initial version of the fct_orders model"
