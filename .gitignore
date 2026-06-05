@@ -7,3 +7,4 @@ dbt_internal_packages/
 .venv/
 logs/dbt.log
 __pycache__/
+.vscode/
