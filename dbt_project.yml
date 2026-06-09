@@ -38,6 +38,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 analyses:
   +enabled: false
 
+tests:
+  dbt_fundamentals_on_demand:
+    +store_failures: true
 models:
   snowflake_spend:
     +enabled: false

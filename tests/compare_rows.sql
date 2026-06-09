@@ -1,3 +1,4 @@
+{{config(enabled=false)}}
 {% set old_relation = ref('fct_orders_deprecated') -%}
 
 {% set dbt_relation = ref('fct_orders') %}
