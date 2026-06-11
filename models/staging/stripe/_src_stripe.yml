@@ -5,3 +5,28 @@ sources:
     database: raw
     tables:
       - name: payment
+        columns:
+          - name: id
+            data_tests:
+              - unique:
+                  config:
+                    severity: error
+                    error_if: ">100"
+                    warn_if: ">10"
+              - not_null:
+                  config:
+                    severity: error
+
+          - name: paymentmethod
+            data_tests:
+              - not_null:
+                  config:
+                    where: "status = 'success'"
+
+          - name: status
+            data_tests:
+              - accepted_values:
+                  values: ['success', 'pending', 'fail']
+                  config:
+                    limit: 10
+                    store_failures: true
